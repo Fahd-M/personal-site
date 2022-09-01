@@ -1,0 +1,18 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+
+.header {
+    background-color: red;
+    border:1px solid black;
+
+}
+
+.nav {
+    background-color: green;
+
+    &__logo {
+        width:1rem;
+        height:1rem;
+    }
+}
