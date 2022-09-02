@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Hero from '../../components/Hero/Hero';
+import Content from '../../components/Content/Content';
+import './Home.scss';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='content'>
+      <Hero />
+      <Content />
+    </div>
+    
   )
 }
 
