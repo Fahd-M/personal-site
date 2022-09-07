@@ -1,6 +1,8 @@
 import "./Header.scss";
+import HamburgerNav from "./HamburgerNav";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logos/BSTN-May-2022-Toront-CT-Headshot-46.jpg";
+import { motion } from "framer-motion";
 //import React from 'react'
 
 function Header() {
@@ -8,9 +10,22 @@ function Header() {
     <header className="header">
       <nav className="nav">
         <Link to="/" className="nav__home">
-          <img className="nav__logo" src={logo} alt="fahd site logo" />
+          <motion.img 
+          whileHover={{        
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 270, 360, -270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            }}
+            // animate={{
+            //     scale: [1, 2, 2, 1, 1],
+            //     rotate: [0, 270, 360, -270, 0],
+            //     borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                
+            // }}
+             className="nav__logo" src={logo} alt="fahd site logo" ></motion.img>
         </Link>
       </nav>
+      <HamburgerNav />
       <ul className="nav__list">
         <li className="nav__item">
           <NavLink

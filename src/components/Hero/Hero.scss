@@ -13,6 +13,8 @@
     padding-top:2rem;
     position:relative;
     width:100%;
+    z-index:-1;
+    opacity:0.75;
 
     &__text{
         @include flexed(column, flex-start,flex-start);
