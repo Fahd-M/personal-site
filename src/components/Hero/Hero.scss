@@ -4,10 +4,10 @@
 
 
 .hero {
-    background-image:url('../../assets/images/hero-windshield.avif');
-    background-position: center;
-    background-repeat:no-repeat;
-    aspect-ratio: 16/9;
+   // background-image:url('../../assets/images/hero-windshield.avif');
+    // background-position: center;
+    // background-repeat:no-repeat;
+    //aspect-ratio: 16/9;
     // background-color:bisque;
     //@include flexed(row, space-between,center);
     padding-top:2rem;
@@ -15,18 +15,30 @@
     width:100%;
     z-index:-1;
     opacity:0.75;
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+  
 
-    &__text{
-        @include flexed(column, flex-start,flex-start);
-        position:relative;
-        left:30%;
-        //z-index:8;
-        color:red;
+    // &__text{
+    //     @include flexed(column, flex-start,flex-end);
+    //     position:relative;
+    //     right:10%;
+
+    //     //z-index:8;
+    //     color:red;
+    //     bottom:30%;
         
-    }
+    // }
 
     &__title{
         margin:0;
+        position:relative;
+        bottom:50%;
+        left:70%;
+        color:red;
+
         
     }
 
@@ -39,6 +51,7 @@
         width:100%;
         // background-image:url('../../assets/images/hero-windshield.avif');
         position:relative;
+        bottom:8%;
         @include flexed(row,center,center);
     }
 
@@ -53,16 +66,17 @@
     &__small-img{
         width:4rem;
         position:absolute;
-        right:200%;
+        left:25%;
         opacity:0.5;
-        top:4rem;
+        bottom:30%;
         //border:1px solid red;
     }
 
     &__big-img{
         width:15rem;
-        bottom:-7em;
+        bottom:-5rem;
         right:15rem;
         position:absolute;
     }
 }
+
