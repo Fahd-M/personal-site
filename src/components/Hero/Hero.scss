@@ -2,6 +2,11 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 
+.tsparticles {
+    height:75vh;
+    // z-index: 10;
+    // background-color: black !important;
+}
 
 .hero {
    // background-image:url('../../assets/images/hero-windshield.avif');
@@ -10,17 +15,17 @@
     //aspect-ratio: 16/9;
     // background-color:bisque;
     //@include flexed(row, space-between,center);
-    padding-top:2rem;
-    position:relative;
+    //padding-top:2rem;
     width:100%;
-    z-index:-1;
+    margin:0;
+    //z-index:-1;
     opacity:0.75;
     position:relative;
     text-align:center;
-    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    //background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
     color:white;
-  
-
+    background-color: black;
+    height:27rem;
     // &__text{
     //     @include flexed(column, flex-start,flex-end);
     //     position:relative;
@@ -31,27 +36,45 @@
     //     bottom:30%;
         
     // }
+    &__headings {
+        @include flexed(column, center, flex-end);
+        position: absolute;
+        right:5%;
+        bottom:30%;
+    // border: 1px dashed white;
+    // border-radius: 30%;
+    padding: 1.5rem 1rem;
+    z-index: 2;
+    }
+
+    &__sub-title{
+        margin:0;
+        position:relative;
+        
+    }
 
     &__title{
         margin:0;
         position:relative;
-        bottom:50%;
-        left:70%;
+        //bottom:50%;
+        //left:70%;
         color:red;
-
+        width: 27vw;
+        right: 10%;
         
     }
 
-
-    &__subheading{
-        margin:0;
+    &__waveline {
+        position:absolute;
+        z-index: 2;
     }
-    
+
     &__visual{
+        z-index:2;
         width:100%;
         // background-image:url('../../assets/images/hero-windshield.avif');
         position:relative;
-        bottom:8%;
+        bottom:21rem;
         @include flexed(row,center,center);
     }
 
@@ -73,10 +96,11 @@
     }
 
     &__big-img{
-        width:15rem;
-        bottom:-5rem;
-        right:15rem;
-        position:absolute;
+
+        width: 9rem;
+        position: absolute;
+        right: 10%;
+        bottom: 15%;
     }
 }
 

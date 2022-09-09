@@ -4,14 +4,18 @@
 
 * {
     font-family:'Roboto Slab';
+    
 }
 
 
 
-// .content {
-    
-//     &__title{
-//         font-family:'Roboto Slab';
-//     }
+.content {
+    background-color: black;
+    color:white;
+    @include flexed(column, center,flex-start);
+    gap:1rem;
+    &__title{
+        font-family:'Roboto Slab';
+    }
 
-// }
+}

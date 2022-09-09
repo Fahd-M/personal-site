@@ -13,7 +13,9 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "5.3",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.2.4",
     "sass": "^1.54.5",
+    "tsparticles": "^2.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
