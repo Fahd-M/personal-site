@@ -1,0 +1,21 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+
+
+.content {
+
+    &__container{
+        margin:0 auto;
+        border:1px dotted red;
+        background-color: black;
+        color:red;
+        @include flexed(column,center,center);
+
+    }
+
+    &__device {
+        margin: 0 auto;
+        border:1px dotted blue;
+    }
+}

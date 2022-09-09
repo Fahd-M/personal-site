@@ -202,7 +202,7 @@ function Hero() {
         <motion.h1
           initial={{ scale: 1, y:0 }}
           animate={{ scale: 1.5, y:+10 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 2 }}
           className="hero__title"
         >
           I'm Fahd

@@ -4,6 +4,8 @@
 
 * {
     font-family:'Roboto Slab';
+    margin:0;
+    font-family:'Roboto Slab';
     
 }
 
@@ -14,8 +16,6 @@
     color:white;
     @include flexed(column, center,flex-start);
     gap:1rem;
-    &__title{
-        font-family:'Roboto Slab';
-    }
+  
 
 }
