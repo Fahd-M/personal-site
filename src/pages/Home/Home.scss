@@ -5,8 +5,8 @@
 * {
     font-family:'Roboto Slab';
     margin:0;
-    font-family:'Roboto Slab';
-    
+box-sizing: border-box;
+padding:0;    
 }
 
 
@@ -15,7 +15,8 @@
     background-color: black;
     color:white;
     @include flexed(column, center,flex-start);
-    gap:1rem;
-  
+    gap:4rem;
+    width: 100%;
+    scroll-behavior: smooth;
 
 }
