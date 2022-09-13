@@ -8,16 +8,32 @@
       @content;
     }
   }
-  
-  @mixin desktop {
+
+
+@mixin desktop {
     @media screen and (min-width: $desktop-breakpoint) {
       @content;
     }
   }
   
-  @mixin flexed($direction, $justify, $align) {
+@mixin flexed($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
   }
+
+@mixin list-reset {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color:$white-color;
+}
+
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+}
