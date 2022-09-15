@@ -1,20 +1,23 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
 
 .header {
-    background-color: red;
+    background-color: transparent;
     border:1px solid black;
     @include flexed(row, space-between, center);
-    height:5rem;
-    z-index:10;
-    //opacity:0.5;
-    font-family:'Roboto Slab';
-}
+    height:$header-height;
+    z-index:$z-index-fixed;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}   
 
 .nav {
-    border-color: #181818 dotted 2px;
-    position:fixed;
+    border: white dotted 2px;
+    //position:fixed;
     width:100%;
     margin:0 auto;
 
@@ -25,7 +28,10 @@
         left:5%;
         transition:transform;
         transition-duration:2s;
-        //z-index:1000;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        cursor: pointer;
         &:hover{
             animation:rotate 2s linear infinite;
         }

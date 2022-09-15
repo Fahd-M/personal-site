@@ -1,6 +1,8 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
 
 
 // .content {
@@ -19,11 +21,21 @@
 //         border:1px dotted blue;
 //     }
 // }
-
+// ANOTHER STYLE ANIMATION METHOD IS TO START WITH THE ELEMENT POSITION x=-100 THEN MOVING TO x=0 
 .content {
 border:1px solid grey;
 position: relative;
+&__title {
+    font-size:$h1-font-size;
+    font-weight:$font-weight-bold;
+    text-transform: uppercase;
+}
 
+
+&__intro {
+    @include flexed(column,center,center);
+    gap:1.5rem;
+}
 &__container{
         
         position: relative;
@@ -38,11 +50,30 @@ position: relative;
         gap:1rem;
     }
 }
+
+.card {
+    background-color: $container-color;
+    width:70%;
+    //padding:2rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom:3.5rem;
+    overflow:hidden;
+    backdrop-filter:blur(64px);
+    //position: absolute;
+    @include flexed(column, center,center);
+
+}
+
+.car-nav__image, 
+.content__title,
+.home__subtitle{
+    position:relative;
+}
+
 .car-nav {
     margin:0 auto;
     @include flexed(column,center,center);
     width:100%;
-    gap:1rem;
     position:relative;
 
     // background-color: hsla(219,33%, 32%, .5);
@@ -50,21 +81,35 @@ position: relative;
     // border-radius: 50%;
     
     &__image {
-        width:10rem;
+        width:100%;
+        //margin:.75rem 0 1.25rem 1.5rem;
+        transition:.3s;
+        position:relative;
+        bottom:0.5rem;
+        margin-bottom:2rem;
+        &:hover{
+            transform:translateY(-.25rem);
+        }
     }
 
     &__link {
-        color:white;
-        
-        border:1px solid grey;
+        border:none;
+        cursor: pointer;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        @include link-reset;
+        outline:none;
         size:1rem;
-        backdrop-filter:blur(16px);
+        //backdrop-filter:blur(16px);
         background-color:hsla(0,0%,100%,.1);
         padding:1rem;
-        border-radius:1.25rem;
-        text-decoration: none;
+        //border-radius:1.25rem;
         text-transform: uppercase;
         transition:0.3s;
+        display:grid;
+        justify-content: center;
+        //align-self:center;
         &:hover {
             background: red;
         }
@@ -78,7 +123,7 @@ position: relative;
         border-radius: 50%;
         @include flexed(row, center,center);
         justify-self:center;
-
+        cursor: pointer;
         &:before {
             content: '';
             border:2px solid hsl(158, 98%, 43%);
@@ -116,8 +161,26 @@ position: relative;
 
 
 }
-.home {
 
+.screen-view {
+    margin-bottom:2.75rem;
+}
+
+.diag-view {
+    left:1.5rem;
+
+}
+
+.rear-view{
+    left:1.75rem;
+}
+.home {
+    &__subtitle {
+        font-size:$h2-font-size;
+        font-weight: $font-weight-regular;
+        text-transform: uppercase;
+    
+    }
     &__intro-img {
         width:100%;
     }
@@ -152,4 +215,24 @@ position: relative;
     }
 
 
+}
+
+// .swiper {
+//     height:100%;
+//     width:70%;
+// }
+
+.mySwiper {
+    width:80%;
+}
+.swiper-slide { 
+    //text-align:center;
+    //background:white;
+    width:50%;
+}
+.swiper-pagination-bullet {
+    background-color: $text-color !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: $primary-color !important;
 }
