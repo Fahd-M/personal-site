@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss'
+//import 'swiper/modules/pagination/pagination.min.css'
+//import 'swiper/swiper.min.css'
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
@@ -30,9 +32,9 @@ function Content() {
           <div className="content__intro">
             <h1 className="content__title">Welcome</h1>
             <h2 className="home__subtitle">Click to learn more!</h2>
-            <motion.div className="car-nav__start">
+            <div className="car-nav__start">
               <Link to="/about" className="car-nav__button">Start</Link>
-            </motion.div>
+            </div>
             {/* SET UP onClick so that after clicking start it makes the slider div appear? */}
             
             {/* MOVE THIS CODE BELOW INTO ABOUT PAGE(INTERESTS) */}
