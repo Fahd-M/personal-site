@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  background-color: transparent;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  border: white dotted 2px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav__logo {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: 5%;
+  transition: transform;
+  transition-duration: 2s;
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+  cursor: pointer;
+}
+.nav__logo:hover {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+}
+.nav__list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    list-style: none;
+    position: fixed;
+    margin: 0;
+    padding: 0.5rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+}
+.nav__link:hover {
+  color: red;
+  font-size: 1.5em;
+}/*# sourceMappingURL=Header.css.map */

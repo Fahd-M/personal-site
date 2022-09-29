@@ -9,11 +9,13 @@ import Education from "./pages/Education/Education";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <BrowserRouter>  
       <Header />
+      <Hero />
       <Switch>
         <Redirect from="/home" to="/" />
         <Route path="/" exact component={Home} />
