@@ -31,3 +31,33 @@
         width:20%;
     }
 }
+
+.interact {
+    position:relative;
+    left:35%; 
+    &__cta {
+        cursor: pointer;
+        border:1px solid white;
+        padding: 2%;
+        border-radius:15%;
+        align-self: center;
+    
+    
+        @include link-reset;
+        &:hover {
+            background-color:$primary-color;
+        }
+    }
+}
+
+.interests {
+    &__container { 
+        width:100%;
+    }
+    &__title{ 
+    margin-top: 3rem;
+    position:relative;
+    left:40%;
+    }
+
+}

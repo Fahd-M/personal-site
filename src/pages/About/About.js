@@ -6,6 +6,7 @@ import fahdSelfieOutdoor from '../../assets/images/Fahd-Munir-headshot.jpeg';
 
 import './About.scss';
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -41,13 +42,25 @@ function About() {
         <motion.img 
           transition={ {repeat:Infinity, duration: 20}}
           initial={{y:0}}
-          animate={{y: [0, 200, 400, 550, 400, 200, 0]}}
+          animate={{y: [0,100, 200, 300, 400, 550, 400, 200, 0]}}
      
           src={fahdSelfie} 
           className='about__img'
         />
  
       </div>      
+    </div>
+    <div className='interact'>
+      <Link
+       to="/contact"
+       className='interact__cta btn'
+      >
+      Contact me here!
+      </Link>
+    </div>
+    <div className="interests__container container">
+      <h2 className="interests__title">Interests</h2>
+      <Interests />
     </div>
     </>
   )

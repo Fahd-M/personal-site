@@ -2,4 +2,65 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
 
+.skills {
+   @include flexed(column,center,center);
+
+   &__title {
+    font-size:$h3-font-size;
+    font-weight:$font-weight-regular;
+    text-align: center;
+    margin:1rem 0;
+    color:$primary-color;   
+    }
+
+   &__inner {
+    width:75vw;
+    margin:0 auto;
+
+   }
+
+   &__icon{
+    align-self:center;
+   }
+
+   &__content { 
+    // margin-bottom:1rem;
+    border-radius:2rem;
+    border: 2px solid $primary-color;
+    padding:2rem 5rem;
+    @include transition;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    &:hover {
+        background:transparent;
+        border-color:white;
+        
+    }
+   }
+
+   &__details {
+    @include flexed(row,flex-start, flex-start);
+    gap:1rem;
+    margin:1rem 0rem;
+   }
+
+   &__text {
+    @include flexed(column,flex-start, flex-start);
+    width:100%;
+        &:hover{
+            color:white;
+        }
+    }
+
+   &__name { 
+    font-size:$small-font-size;
+    font-weight:$font-weight-light;
+   }
+   &__level {
+    font-size:0.6rem;
+    font-weight:$font-weight-light;
+   }
+}

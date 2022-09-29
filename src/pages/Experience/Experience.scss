@@ -3,4 +3,49 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/global" as *; 
 
+.inner {
+    @include flexed(column,center,center);
+    gap:1rem;
+}
+.download {
+    @include flexed(row,center,center);
+    gap:0.5rem;
+    &__btn {
+        cursor: pointer;
+        border:1px solid $primary-color;
+        padding: 2%;
+        border-radius:5px;
+        align-self: center;
+        width:100%;
+        text-align: center;
+    
+    
+        @include link-reset;
+        &:hover {
+            background-color:$primary-color;
+            border:transparent;
+        }
 
+    }
+}
+
+.skills {
+    &__section-title{
+        text-align: center;
+        margin-top:1rem;
+    }
+}
+// .btn {
+//     cursor: pointer;
+//     border:1px solid $primary-color;
+//     padding: 2%;
+//     border-radius:5px;
+//     align-self: center;
+
+
+//     @include link-reset;
+//     &:hover {
+//         background-color:$primary-color;
+//         border:transparent;
+//     }
+// }

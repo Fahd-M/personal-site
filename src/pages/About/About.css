@@ -128,4 +128,30 @@ img {
 .about__outdoor {
   border-radius: 80%;
   width: 20%;
+}
+
+.interact {
+  position: relative;
+  left: 35%;
+}
+.interact__cta {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 2%;
+  border-radius: 15%;
+  align-self: center;
+  text-decoration: none;
+  color: #fff;
+}
+.interact__cta:hover {
+  background-color: hsl(219deg, 69%, 56%);
+}
+
+.interests__container {
+  width: 100%;
+}
+.interests__title {
+  margin-top: 3rem;
+  position: relative;
+  left: 40%;
 }/*# sourceMappingURL=About.css.map */

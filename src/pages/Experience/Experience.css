@@ -97,4 +97,40 @@ img {
 
 .main {
   overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.download__btn {
+  cursor: pointer;
+  border: 1px solid hsl(219deg, 69%, 56%);
+  padding: 2%;
+  border-radius: 5px;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.download__btn:hover {
+  background-color: hsl(219deg, 69%, 56%);
+  border: transparent;
+}
+
+.skills__section-title {
+  text-align: center;
+  margin-top: 1rem;
 }/*# sourceMappingURL=Experience.css.map */
