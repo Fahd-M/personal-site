@@ -2,6 +2,7 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
 
 .inner {
     @include flexed(column,center,center);
@@ -36,6 +37,14 @@
     }
 }
 
+.employment {
+    &__title {
+        text-align: center;
+        margin:1rem 0;
+        font-size:$h2-font-size;
+        font-weight:$font-weight-regular;
+    }
+}
 
 //want a clickable area for the employment__details so that it drops down bullet point lists
 //use onclick for employment__lower

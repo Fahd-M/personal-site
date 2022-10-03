@@ -133,4 +133,11 @@ img {
 .skills__section-title {
   text-align: center;
   margin-top: 1rem;
+}
+
+.employment__title {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
 }/*# sourceMappingURL=Experience.css.map */

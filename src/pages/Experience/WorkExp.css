@@ -99,6 +99,54 @@ img {
   overflow: hidden;
 }
 
+.work__wrapper {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.399);
+  margin-bottom: 1rem;
+}
+.work__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px dotted hsl(219deg, 69%, 56%);
+}
+.work__image {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 20%;
+}
 .work__img {
-  width: 10%;
+  width: 50%;
+}
+.work__text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work__title {
+  color: hsl(219deg, 69%, 56%);
+  font-size: 1rem;
+}
+.work__date {
+  font-size: 0.813rem;
+}
+.work__description {
+  margin: 0;
+  padding-bottom: 8px;
+  font-size: 0.813rem;
+}
+.work__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 4px;
+}
+.work__icon {
+  padding-right: 1rem;
 }/*# sourceMappingURL=WorkExp.css.map */

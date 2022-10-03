@@ -5,8 +5,66 @@
 @use "../../styles/partials/typography" as *;
 
 .work {
+    &__wrapper {
+        width:100%;
+        background-color: rgba(0, 0, 0, 0.399);
+        margin-bottom:1rem;
+    }
 
+    &__top {
+        @include flexed(row, space-between,center);
+        cursor: pointer;
+        border:1px dotted $primary-color;
+        
+    }
+    &__image {
+        display:inline-flex;
+        align-items: flex-end;
+        width:20%;
+    }
     &__img {
-        width:10%;
+        width:50%;
+    
+    }
+
+    &__text{
+        width:80%;
+        @include flexed(column,center,center);
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size:$h3-font-size;
+        // &:hover {
+        //     color:white;
+        // }
+
+    }
+
+    &__date {
+        font-size: $small-font-size;
+        // &:hover {
+        //     color:$primary-color;
+        // }
+        //color: $primary-color;
+
+    }
+
+    &__description{
+        margin:0;
+        padding-bottom:8px;
+        font-size: $small-font-size;
+        
+    }
+
+    &__line {
+        @include flexed(row,space-between,center);
+        
+        padding:0 1rem;
+        //@include list-reset;
+        margin-bottom:4px;
+    }
+    &__icon {
+        padding-right:1rem;
     }
 }
