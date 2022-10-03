@@ -1,0 +1,12 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+.work {
+
+    &__img {
+        width:10%;
+    }
+}
