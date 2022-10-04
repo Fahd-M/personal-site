@@ -1,0 +1,41 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+
+.education {
+    width:100%;
+    max-width: 1140px;
+    @include flexed(column,flex-start,center);
+
+
+    &__wrapper {
+        width:90%;
+        height: 100vh;
+        margin-top:6rem;
+        @include flexed(row,center,center);
+        //background-color: rgb(57, 57, 57);
+    }
+
+
+    &__title {
+        font-size:$h1-font-size;
+        
+    }
+
+    &__info {
+        @include flexed(column,flex-start, flex-start);
+        width:100%;
+        // tablet: column, flex-start , desktop:row, space-evenly(justify-content)
+
+    }
+    &__school {
+        font-size: $h2-font-size;
+        text-decoration: underline;
+        align-self: center;
+        
+        margin:1rem;
+    }
+}
