@@ -1,1 +1,197 @@
-/*# sourceMappingURL=Contact.css.map */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.938rem;
+  position: relative;
+  overflow-x: hidden;
+  background-color: hsl(219deg, 4%, 4%);
+  color: hsl(219deg, 8%, 75%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 700;
+  color: hsl(219deg, 8%, 95%);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: hsl(219deg, 69%, 56%);
+  padding: 1.2rem;
+  text-align: center;
+  color: white;
+  border-radius: 1.2rem;
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.contact__option:hover {
+  border-color: white;
+  background-color: hsl(219deg, 69%, 52%);
+}
+.contact__icon {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.contact__link {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  font-size: 0.813rem;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.form__label {
+  text-transform: uppercase;
+  color: white;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid hsl(219deg, 69%, 56%);
+  resize: none;
+  color: white;
+  margin-bottom: 1rem;
+}
+input:hover, textarea:hover {
+  background-color: hsl(219deg, 4%, 7%);
+}
+
+.btn {
+  background-color: hsl(219deg, 69%, 56%);
+  border: 1px solid transparent;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+  border: 1px solid hsl(219deg, 69%, 56%);
+}/*# sourceMappingURL=Contact.css.map */

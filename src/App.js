@@ -1,7 +1,7 @@
 
 import './styles/App.scss';
 import Header from './components/Header/Header.js';
-//import Footer from './components/Footer/Footer.js';
+import Footer from './components/Footer/Footer.js';
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Experience from "./pages/Experience/Experience";
@@ -25,6 +25,7 @@ function App() {
         <Route path="/contact" component={Contact}/>
         <Route component={NotFound} />
       </Switch>
+      <Footer />
 
 
     </BrowserRouter>

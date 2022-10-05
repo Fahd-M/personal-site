@@ -7,11 +7,11 @@
 .schools {
     &__wrapper {
         border: 3px solid white;
-        width:100%;
+        width:95%;
         position:relative;
         margin-bottom:2rem;
         padding:2rem;
-        //left:1rem;
+        left:0.5rem;
         
         &:hover{
             cursor: pointer;
@@ -19,23 +19,23 @@
                 content: '';
                 width: 50px;
                 height: 75px;
-                border-top:2px solid red;
-                border-right:2px solid red;
+                border-top:3px solid $primary-color;
+                border-right:3px solid $primary-color;
                 position:absolute;
                 top:-3px;
-                transition: 0.4;
-                right:-2rem;
+                transition: 0.4s;
+                right: -3px;
             }
             &::after {
                 content: '';
                 width: 50px;
                 height: 75px;
-                border-left:2px solid red;
-                border-bottom:2px solid red;
+                border-left:3px solid $primary-color;
+                border-bottom:3px solid $primary-color;
                 position:absolute;
                 bottom:-3px;
                 transition: 0.4s;
-                left:-2rem;
+                left:-3px;
             }
         }
         &::before {
@@ -47,7 +47,7 @@
             position:absolute;
             top:-3px;
             transition: 0.4s;
-            right:-2rem;
+            right:-3px;
         }
         &::after{
             content: '';
@@ -58,7 +58,7 @@
             position:absolute;
             bottom:-3px;
             transition: 0.4s;
-            left:-2rem;
+            left:-2px;
         }
         // &:hover::after {
         //     width: 50px;
@@ -105,6 +105,9 @@
     &__name {
         margin:0;
         font-size: $h3-font-size;
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &__school {

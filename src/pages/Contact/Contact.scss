@@ -1,0 +1,104 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+// .container {
+//     width:90%;
+//     display:grid;
+//     grid-template-columns: 30% 60%;
+//     gap:20%;
+
+
+// }
+
+.contact {
+    &__content {
+        @include flexed(column,center,center);
+        gap:1rem;
+    }
+    &__container {
+        width:90%;
+        @include flexed(column,center, center);
+        gap:2rem;
+
+    }
+
+    &__options {
+        @include flexed(column,center,center);
+        gap:2rem;
+    }
+    &__option {
+        @include flexed(column,center,center);
+        gap:0.5rem;
+        background-color: $primary-color;
+        padding:1.2rem;
+        text-align: center;
+        color:white;
+        border-radius:1.2rem;
+        border:2px solid transparent;
+        @include transition;
+        width:100%;
+        &:hover{
+            border-color:white;
+            background-color: $primary-color-active;
+        }
+
+    
+    }
+
+    &__icon {
+        color:white;
+        font-size:1.5rem;
+        margin-bottom:0.5rem;
+    }
+    &__link {
+        @include link-reset;
+        text-decoration:underline;
+        padding:0.5rem;
+        margin-top:0.5rem;
+        display:inline-block;
+        font-size:$small-font-size;
+        cursor: pointer;
+    }
+}
+
+form {
+    @include flexed(column,center,center);
+    //gap:1rem;
+    width:80%;
+
+
+}
+
+.form__label {
+    text-transform: uppercase;
+    color: white;
+}
+input, textarea {
+    width:100%;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border:2px solid $primary-color;
+    resize:none;
+    color:white;
+    margin-bottom:1rem;
+    &:hover{
+        background-color: $container-color;
+    }
+}
+
+.btn { 
+    background-color: $primary-color;
+    border:1px solid transparent;
+    padding:1rem;
+    color:white;
+    border-radius:1rem;
+    cursor: pointer;
+    &:hover {
+        background-color:black;
+        border:1px solid $primary-color;
+    }
+}

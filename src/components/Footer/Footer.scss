@@ -1,10 +1,41 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+.footer {
+  @include flexed(row, space-around,center);
+  //position:fixed;
+  height:3rem;
+  width:100%;
+  background-color: $primary-color-active;
+  &__logo {
+    @include link-reset;
+    border:1px solid white;
+    padding:0.25rem;
+    border-radius:1rem;
+    cursor: pointer;
+  }
+  &__socials {
+    display:flex;
+    gap:0.5rem;
+  }
+  &__link {
+    @include link-reset;
+  }
+
+  &__icon {
+    color:white;
+    font-size:1.5rem;
+    
+  }
+
+  &__copyright {
+    color:white;
+  }
+
 }
 
 // .html {

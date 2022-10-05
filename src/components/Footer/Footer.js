@@ -1,31 +1,39 @@
 import React from 'react'
-import { Link, NavLink } from "react-router-dom";
 import "./Footer.scss";
+import { AiOutlineFacebook } from 'react-icons/ai';
+import { BsInstagram } from 'react-icons/bs';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
+import { AiOutlineCopyright } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
-import { slide as Menu } from 'react-burger-menu';
 
 function Footer() {
   return (
-    <div>Footer</div>
-//     <nav class="navbar">
-//       <div class="navbar-container container">
-//           <input type="checkbox" name="" id=""/>
-//           <div class="hamburger-lines">
-//               <span class="line line1"></span>
-//               <span class="line line2"></span>
-//               <span class="line line3"></span>
-//           </div>
-//           <ul class="menu-items">
-//               <li><a href="#home">Home</a></li>
-//               <li><a href="#about">About</a></li>
-//               <li><a href="#food">Experience</a></li>
-//               <li><a href="#food-menu">Education</a></li>
-//               <li><a href="#contact">Contact</a></li>
-//           </ul>
-//           <h1 class="logo">FM</h1>
-//       </div>
-//   </nav>
+    <footer className='footer'>
+      <Link to="/home" className="footer__logo">Go Home</Link>
+      <div className='footer__socials'>
+          <a href='https://facebook.com' target="_blank" className='footer__link'>
+            <AiOutlineFacebook className='footer__icon'/>
+          </a>
+          <a href='https://intagram.com' target="_blank" className='footer__link'>
+            <BsInstagram className='footer__icon'/>
+          </a>
+          <a href='https://linkedin.com' target="_blank"className='footer__link'>
+            <AiOutlineLinkedin className='footer__icon'/>
+          </a>
+          <a href='https://github.com' target="_blank" className='footer__link'>
+            <AiFillGithub className='footer__icon'/>
+          </a>
+      </div> 
+
+      <div className='footer__copyright'>
+        <p className='footer__copyright-text'> &copy; Fahd Munir Portfolio Website. All rights reserved. </p>
+      </div>
+    </footer>
+
   )
 }
 
 export default Footer
+
