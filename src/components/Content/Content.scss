@@ -5,28 +5,12 @@
 @use "../../styles/partials/variables" as *;
 
 
-// .content {
-
-//     &__container{
-//         margin:0 auto;
-//         border:1px dotted red;
-//         background-color: black;
-//         color:red;
-//         @include flexed(column,center,center);
-
-//     }
-
-//     &__device {
-//         margin: 0 auto;
-//         border:1px dotted blue;
-//     }
-// }
 // ANOTHER STYLE ANIMATION METHOD IS TO START WITH THE ELEMENT POSITION x=-100 THEN MOVING TO x=0 
 .content {
 border:1px solid grey;
 position: relative;
 &__title {
-    font-size:$h1-font-size;
+    // font-size:$h1-font-size;
     font-weight:$font-weight-bold;
     text-transform: uppercase;
 }
@@ -53,8 +37,10 @@ position: relative;
 
 .card {
     background-color: $container-color;
-    width:70%;
+    //width:100%;
     //padding:2rem 1.5rem;
+    width:40%;
+    //border:1px dotted white;
     border-radius: 1rem;
     margin-bottom:3.5rem;
     overflow:hidden;
@@ -111,7 +97,7 @@ position: relative;
         justify-content: center;
         //align-self:center;
         &:hover {
-            background: red;
+            background: $primary-color;
         }
     }
 
@@ -124,6 +110,7 @@ position: relative;
         @include flexed(row, center,center);
         justify-self:center;
         cursor: pointer;
+        margin-bottom: 1rem;
         &:before {
             content: '';
             border:2px solid hsl(158, 98%, 43%);
@@ -236,4 +223,8 @@ position: relative;
 }
 .swiper-pagination-bullet-active {
     background-color: $primary-color !important;
+}
+
+.swiper-pagination-bullets-dynamic {
+    top:85%;
 }

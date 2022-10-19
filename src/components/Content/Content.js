@@ -1,11 +1,5 @@
-import React from "react";
-import MobileScreen from "../MobileScreen/MobileScreen";
-import TabletScreen from "../TabletScreen/TabletScreen";
 import "./Content.scss";
-import { GiElectric } from "react-icons/gi";
-import { MdOutlineSportsBasketball } from "react-icons/md";
-import { AiOutlineCar } from "react-icons/ai";
-import { FaDog } from "react-icons/fa";
+
 import carSideView from "../../assets/images/evo-car-side.png";
 import carFront from "../../assets/images/evo-front.png";
 import infotainment from "../../assets/images/infotainment-empty.jpg";
@@ -16,15 +10,13 @@ import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss'
-//import 'swiper/modules/pagination/pagination.min.css'
-//import 'swiper/swiper.min.css'
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
-
-
 import { motion } from "framer-motion";
+
 function Content() {
+
   return (
     <section className="content">
       <div className="content__container">
@@ -36,28 +28,8 @@ function Content() {
               <Link to="/about" className="car-nav__button">Start</Link>
             </div>
             {/* SET UP onClick so that after clicking start it makes the slider div appear? */}
-            
-            {/* MOVE THIS CODE BELOW INTO ABOUT PAGE(INTERESTS) */}
-            {/* <h3 className="home__icons">
-              <GiElectric className="home__intro-icon" color="white" />
-              Junior Developer
-            </h3>
-            <h3 className="home__icons">
-              <AiOutlineCar className="home__intro-icon" color="white" />
-              Automotive Enthusiast 
-            </h3>
-            <h3 className="home__icons">
-              <MdOutlineSportsBasketball className="home__intro-icon" color="white" />
-              All things basketball
-            </h3>
-            <h3 className="home__icons">
-              <FaDog className="home__intro-icon" color="white" />
-              Dog Lover
-            </h3> */}
           </div>
-{/* can put the img inside the link? so clicking anywhere on image will take you to that page? */}
-   {/* OR can create a card with the background image as the car, with text at the bottom(travel site vibe) */}
-          
+
           <Swiper
             className="car-nav container mySwiper"
             spaceBetween={25}
@@ -116,9 +88,7 @@ function Content() {
             </SwiperSlide> 
           </Swiper>
 
-          {/* add ternary operator for which screen to show based on screen width or use scss */}
-          {/* <TabletScreen />
-          <MobileScreen /> */}
+         
         </div>
       </div>
     </section>

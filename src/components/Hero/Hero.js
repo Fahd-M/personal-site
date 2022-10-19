@@ -1,52 +1,22 @@
-import React from "react";
 import "./Hero.scss";
-// import HeroImg from '../../assets/images/hero-windshield.avif';
-import closeTag from "../../assets/images/close-tag.svg";
 import binaryWorld from "../../assets/images/binary-world.svg";
-
 import { motion } from "framer-motion";
 import Waveline from "./Waveline";
-//import Particles from "../Particles/Particles";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-//import Particles from "react-particles"
 
  
 function Hero() {
 
   const particlesInit = async (main) => {
     console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
   const particlesLoaded = (container) => {
     console.log(container);
   };
-  // const particlesProps = {
-  //   height: "100vh",
-  //   params: {
-  //     interactivity: {
-  //       detectsOn: "canvas",
-  //       events: {
-  //         onHover: {
-  //           enable: true,
-  //           mode: "repulse"
-  //         }
-  //       }
-  //     },
-  //     particles: {
-  //       number: {
-  //         value: 80,
-  //       },
-  //     }
-  //   }
-  // }
-  // 
   
   const optionsVar =
   {
@@ -191,9 +161,8 @@ function Hero() {
       
       <div className="hero__headings">
         <motion.h2
-          initial={{ scale: 1.5, x:-250, y:+50, color:"#ff0000"}}
-          animate={{ scale:1, x:0, y:0, color:"#ffffff"}}
-          // whileHover={{scale: 1.5, x:-250, y:+50, color:"#ff0000"}}
+          initial={{ scale: 1.5, x:-125, y:+10, color:"306BD9"}}
+          animate={{ scale:1, x:0, y:0, color:"306BD9"}}
           transition={{delay: 5, duration: 2}}
           className="hero__sub-title"
         >
@@ -201,8 +170,8 @@ function Hero() {
         </motion.h2>
         <motion.h1
           initial={{ scale: 1, y:0 }}
-          animate={{ scale: 1.5, y:+10 }}
-          transition={{ duration: 2 }}
+          animate={{ scale: 1.5, y:+20 }}
+          transition={{ duration: 3 }}
           className="hero__title"
         >
           I'm Fahd
@@ -211,7 +180,6 @@ function Hero() {
       <div className="hero__visual">
         <Waveline className="hero__waveline" />
 
-        {/* <img src={closeTag} className="hero__small-img" /> */}
         <motion.img
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}

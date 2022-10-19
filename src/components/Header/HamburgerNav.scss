@@ -7,46 +7,33 @@
 .hmbg {
   @include flexed(row, flex-end, center);
   width: 100%;
-  //height:$header-height;
+  height:$header-height;
   position:fixed;
   top:0;
-  right:5%;
-  //backdrop-filter: blur(96px);
-  
-  // @include tablet{
-  //     display:none;
-  // }
-
-  // @include desktop{
-  //     display:none;
-  // }
+    
+  @include tablet{
+      display:none;
+  }
 
   &__list {
     @include flexed(column, center, flex-end);
     @include list-reset;
     gap: 1rem;
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     background-color: hsla(0,0%,100%,.1);
     backdrop-filter: blur(96px);
-    box-shadow: 5px 5px 5px white;
-    //color: white;
     width: 100%;
-    border-top: 2px solid rgb(255, 255, 255);
+    border-top: 3px solid $primary-color-active;
+    border-bottom: 3px solid $primary-color-active;
     padding: 1rem 5%;
 
     @include tablet {
       display: none;
     }
-
-    @include desktop {
-      display: none;
-    }
   }
 
   &__link {
-    // text-decoration: none;
-    // color: white;
     @include link-reset;
     text-transform: uppercase;
     font-size:$h2-font-size;
@@ -59,11 +46,6 @@
   &__icon {
     position: relative;
     right: 5%;
-    top:.5rem;
     cursor: pointer;
-    // &-close:hover{
-    //     transform: rotate(180deg);
-    //     transition: transform 0.3 ease-in-out;
-    // }
   }
 }

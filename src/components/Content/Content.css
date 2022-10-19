@@ -24,7 +24,6 @@
   position: relative;
 }
 .content__title {
-  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -51,7 +50,7 @@
 
 .card {
   background-color: hsl(219deg, 4%, 7%);
-  width: 70%;
+  width: 40%;
   border-radius: 1rem;
   margin-bottom: 3.5rem;
   overflow: hidden;
@@ -106,7 +105,7 @@
   justify-content: center;
 }
 .car-nav__link:hover {
-  background: red;
+  background: hsl(219deg, 69%, 56%);
 }
 .car-nav__start {
   border: 2px solid hsl(158deg, 89%, 30%);
@@ -120,6 +119,7 @@
   align-items: center;
   justify-self: center;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 .car-nav__start:before {
   content: "";
@@ -217,4 +217,8 @@
 
 .swiper-pagination-bullet-active {
   background-color: hsl(219deg, 69%, 56%) !important;
+}
+
+.swiper-pagination-bullets-dynamic {
+  top: 85%;
 }/*# sourceMappingURL=Content.css.map */

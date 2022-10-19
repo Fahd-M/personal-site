@@ -1,6 +1,8 @@
-import React from 'react';
 import './Interests.scss';
- 
+import { GiElectric } from "react-icons/gi";
+import { MdOutlineSportsBasketball } from "react-icons/md";
+import { AiOutlineCar } from "react-icons/ai";
+import { FaDog } from "react-icons/fa";
 function Interests() {
   return (
     <>

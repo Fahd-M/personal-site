@@ -33,7 +33,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", Arial, sans-serif;
+  font-family: "Roboto Slab", Arial, sans-serif, sans-serif;
   font-weight: 500;
   font-size: 0.938rem;
   position: relative;
@@ -99,16 +99,9 @@ img {
   overflow: hidden;
 }
 
-* {
-  font-family: "Roboto Slab";
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-
 .content {
   background-color: black;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,4 +109,5 @@ img {
   gap: 4rem;
   width: 100%;
   scroll-behavior: smooth;
+  border: none;
 }/*# sourceMappingURL=Home.css.map */
