@@ -1,5 +1,3 @@
-import React from 'react'
-import Skills from '../../components/Skills/Skills';
 import Interests from '../../components/Interests/Interests';
 import fahdSelfie from '../../assets/logos/BSTN-May-2022-Toront-CT-Headshot-46.jpg';
 import fahdSelfieOutdoor from '../../assets/images/Fahd-Munir-headshot.jpeg';
@@ -14,9 +12,9 @@ function About() {
     <div className='about__container container section'>
       <div className='about__content'>
         <motion.img 
-          transition={ {repeat:Infinity, duration: 20}}
-          initial={{y:550}}
-          animate={{y: [550, 400, 200, 0, 200, 400, 550]}}
+          transition={ {repeat:Infinity, duration: 30}}
+          initial={{y:2200}}
+          animate={{y: [2200,2000,1700,1300, 1000, 800, 600, 400, 200, 0, 200, 400, 600, 800, 1000, 1300, 1700,2000,2200]}}
           src={fahdSelfieOutdoor} 
           className='about__outdoor'
         />
@@ -40,9 +38,9 @@ function About() {
           </div>
         </div>
         <motion.img 
-          transition={ {repeat:Infinity, duration: 20}}
+          transition={ {repeat:Infinity, duration: 30}}
           initial={{y:0}}
-          animate={{y: [0,100, 200, 300, 400, 550, 400, 200, 0]}}
+          animate={{y: [0,200, 400, 600, 800, 1000, 1300, 1700, 2000, 2200, 2000,1700, 1300, 1000, 800, 600, 400, 200, 0]}}
      
           src={fahdSelfie} 
           className='about__img'

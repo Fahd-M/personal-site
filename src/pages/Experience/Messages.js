@@ -3,7 +3,8 @@ const messages = {
     [
         {
             company: "BrainStation",
-            titleDate: "Teaching Assistant (April 2022 - Present)",
+            titleDate: "Teaching Assistant",
+            date:"(April 2022 - Present)",
             pic: "/brainstation.png",
             description: [
               "Conducted code review and provided 1-on-1 mentorship for a class of sixteen students to assist in successful completion of the full stack Web Development Diploma program.",
@@ -12,7 +13,8 @@ const messages = {
         },
         {
             company: "Canada Revenue Agency(CRA)",
-            titleDate: "Taxpayer Services Agent (Nov 2018 - Apr 2022)",
+            titleDate: "Taxpayer Services Agent",
+            date:"(Nov 2018 - Apr 2022)",
             pic: "/cra.jpg",
             description: [
               "Analyzed 60-80 individual tax accounts daily and educated taxpayers and/or representatives on the filing and processing of tax returns and social benefits to increase taxpayer ability to use self-serve features.",
@@ -24,7 +26,8 @@ const messages = {
         },
         {
             company: "King Valet Inc",
-            titleDate: "Operations Manager(Feb 2017 - Apr 2021)",
+            titleDate: "Operations Manager",
+            date:"(Feb 2017 - Present)",
             pic: "/kingValet.jpg",
             description: [
                 "Assisted with the expansion of business by being resourceful while working cross-collaboratively in a 4-person team to identify parking issues around urban areas and improve the efficiency of traffic flow for events or local businesses.",
@@ -33,7 +36,8 @@ const messages = {
         },
         {
             company: "FM Consulting(Self-employed)",
-            titleDate: "Assistant(Nov 2019 - Jan 2020)",
+            titleDate: "Assistant",
+            date:"(Nov 2019 - Jan 2020)",
             pic: "/Fahd-Munir-headshot.jpeg",
             description: [
                 "Contracted by Chan, Cho and Associates to organize client financial files while displaying attention to detail, resulting in timely submission of business tax returns.",
@@ -42,7 +46,8 @@ const messages = {
         },
         {
             company: "Royal Bank of Canada",
-            titleDate: "Cards Advisor/Sales and Service Representative(June 2017 - Nov 2018)",
+            titleDate: "Cards Advisor/Sales and Service Rep",
+            date: "(June 2017 - Nov 2018)",
             pic: "/rbc.png",
             description: [
                 "Met client immediate financial needs while providing an exceptional client experience to strengthen relationships through conveying crucial information retained by active listening, problem solving, and memorization.",

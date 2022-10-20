@@ -4,15 +4,19 @@
 @use "../../styles/partials/global" as *; 
 
 .cards {
-    @include flexed(row, center,center);
+    @include flexed(column, center,center);
     margin-top:1rem;
     gap:0.5rem;
-    //see henry's version of calc(100-30vw) to center it
     flex-wrap:wrap;
+    width:calc(100vw - 30vw);
     
 }
 
-// .card { 
-//     width:40%;
-//     border:1px dotted white;
-// }
+.card {
+    margin-bottom: 1rem;
+    &__img {
+        width:6rem;
+        height:auto;
+
+    }
+}

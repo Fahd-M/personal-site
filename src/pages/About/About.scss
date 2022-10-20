@@ -4,37 +4,38 @@
 @use "../../styles/partials/global" as *; 
 
 .about {
-    &__container {
-       // @include flexed(column, center, center);
-        //gap:1rem;
-    }
     &__body { 
         @include flexed(column,center, center);
         gap:0.5rem;
     }
+
     &__content {
         @include flexed(row,center,flex-start);
         gap:1rem;
     }
+
     &__text {
         @include flexed(column,center,center);
         gap:1rem;
         margin-left:0.5rem;
     }
+
     &__img {
         width:20%;
         border-radius:50%;
-        
+        margin-right:0.5rem;    
     }
+
     &__outdoor {
         border-radius:80%;
         width:20%;
+        margin-left:0.5rem;
     }
 }
 
 .interact {
-    position:relative;
-    left:35%; 
+    @include flexed(row,center,center);
+
     &__cta {
         cursor: pointer;
         border:1px solid white;
@@ -53,11 +54,11 @@
 .interests {
     &__container { 
         width:100%;
+        @include flexed(column,center,center);
     }
+
     &__title{ 
-    margin-top: 3rem;
-    position:relative;
-    left:40%;
+    margin: 1.5rem 0rem;
     }
 
 }

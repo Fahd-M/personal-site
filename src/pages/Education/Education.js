@@ -16,6 +16,7 @@ function Education() {
           {eduMessages.degrees.map(item => <Schools key={item.name} {...item}/>)}
         </div>
       </section>
+      
     </div>
   )
 }

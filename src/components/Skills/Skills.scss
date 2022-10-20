@@ -6,7 +6,7 @@
 
 .skills {
    @include flexed(column,center,center);
-
+    margin-bottom:1rem;
    &__title {
     font-size:$h3-font-size;
     font-weight:$font-weight-regular;
@@ -26,10 +26,9 @@
    }
 
    &__content { 
-    // margin-bottom:1rem;
     border-radius:2rem;
     border: 2px solid $primary-color;
-    padding:2rem 5rem;
+    padding:2rem 1rem;
     @include transition;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -58,7 +57,9 @@
    &__name { 
     font-size:$small-font-size;
     font-weight:$font-weight-light;
+    margin:0; 
    }
+   
    &__level {
     font-size:0.6rem;
     font-weight:$font-weight-light;

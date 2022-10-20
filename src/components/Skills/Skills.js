@@ -1,4 +1,3 @@
-import React from "react";
 import "./Skills.scss";
 import { BsCloudCheckFill } from "react-icons/bs";
 
@@ -32,6 +31,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -43,6 +43,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -54,6 +55,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -65,6 +67,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -78,6 +81,7 @@ function Skills() {
               </article>
             </div>
           </div>
+
           <div className="skills__backend">
             <h4 className="skills__title"> Backend Development </h4>
             <div className="skills__content">
@@ -92,6 +96,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -103,6 +108,7 @@ function Skills() {
                   <small className="skills__level"> Intermediate </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -114,6 +120,7 @@ function Skills() {
                   <small className="skills__level"> Intermediate </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -125,6 +132,7 @@ function Skills() {
                   <small className="skills__level"> Basic </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -141,9 +149,11 @@ function Skills() {
               </article>
             </div>
           </div>
+
           <div className="skills__other">
             <h4 className="skills__title"> Other </h4>
             <div className="skills__content">
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -155,6 +165,7 @@ function Skills() {
                   <small className="skills__level"> Intermediate </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -166,6 +177,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -177,6 +189,7 @@ function Skills() {
                   <small className="skills__level"> Experienced </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
@@ -188,6 +201,7 @@ function Skills() {
                   <small className="skills__level"> Intermediate </small>
                 </article>
               </article>
+
               <article className="skills__details">
                 <BsCloudCheckFill
                   color="#4B80E2"
