@@ -13,6 +13,10 @@ position: relative;
     // font-size:$h1-font-size;
     font-weight:$font-weight-bold;
     text-transform: uppercase;
+    
+    @include tablet {
+        font-size: $h1-tablet-font-size;
+    }
 }
 
 
@@ -226,5 +230,5 @@ position: relative;
 }
 
 .swiper-pagination-bullets-dynamic {
-    top:85%;
+    top:90%;
 }

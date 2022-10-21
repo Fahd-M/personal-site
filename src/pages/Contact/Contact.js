@@ -43,7 +43,7 @@ function Contact() {
             </article>
 
           </div>
-          <form ref={form} onSubmit={sendEmail} >
+          <form ref={form} onSubmit={sendEmail} className="form">
             <label className="form__label" for="name">What is your name?</label>
             <input type="text" name="name" placeholder="Your Full Name" required />
             <label className="form__label" for="email">What is your email?</label>

@@ -13,8 +13,8 @@ function About() {
       <div className='about__content'>
         <motion.img 
           transition={ {repeat:Infinity, duration: 30}}
-          initial={{y:2200}}
-          animate={{y: [2200,2000,1700,1300, 1000, 800, 600, 400, 200, 0, 200, 400, 600, 800, 1000, 1300, 1700,2000,2200]}}
+          initial={{y:1300}}
+          animate={{y: [1300,1200,1000,800,600,400, 200, 0, 200, 400, 600, 800, 1000, 1200,1300]}}
           src={fahdSelfieOutdoor} 
           className='about__outdoor'
         />
@@ -40,7 +40,7 @@ function About() {
         <motion.img 
           transition={ {repeat:Infinity, duration: 30}}
           initial={{y:0}}
-          animate={{y: [0,200, 400, 600, 800, 1000, 1300, 1700, 2000, 2200, 2000,1700, 1300, 1000, 800, 600, 400, 200, 0]}}
+          animate={{y: [0,200, 400, 600, 800, 1000, 1200, 1300, 1200, 1000, 800, 600,400, 200, 0]}}
      
           src={fahdSelfie} 
           className='about__img'

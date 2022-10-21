@@ -2,6 +2,7 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .header {
     background-color: rgba(0, 0, 0, 0.75);
@@ -12,6 +13,11 @@
     top:0;
     left:0;
     width:100%;
+
+    @include tablet {
+        @include flexed(row,flex-end, center);
+        height: $tablet-header-height;
+    }
 }   
 
 .nav {
@@ -39,6 +45,13 @@
         &:hover{
             animation:rotate 2s linear infinite;
         }
+
+        @include tablet {
+            width:4rem;
+            height:auto;
+            margin:0.5rem 0rem;
+
+        }
     }
 
     &__list {
@@ -49,7 +62,18 @@
             margin:0;
             padding:0.5rem;
             width:70%;
-            @include flexed(row,space-between,center);
+            font-size:$h3-font-size;
+            @include flexed(row,space-around,center);
+        }
+    }
+
+    &__item {
+        @include tablet {
+            &:hover{
+                color:$primary-color;
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 
@@ -58,7 +82,7 @@
         color:white;
 
         &:hover{
-            color:red;
+            color:$primary-color;
             font-size:1.5em;
         }
     }

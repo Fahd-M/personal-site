@@ -25,6 +25,8 @@
         margin:0;
         position:relative;
         color:$white-color;
+        width:100%;
+        margin-right:10%;
     }
 
     &__title{
@@ -42,13 +44,18 @@
         width:100%;
         position:relative;
         bottom:70%;
-        @include flexed(row,center,center);
+        //z-index: 30;
+        @include flexed(column,center,flex-end);
     }
 
     &__big-img{
         width: 9rem;
         position: absolute;
-        right: 10%;
+        align-self:flex-end;
+        margin-right:5%;
+        margin-bottom:10%;
+        //right: 10%;
+        //bottom:20%;
     }
 }
 

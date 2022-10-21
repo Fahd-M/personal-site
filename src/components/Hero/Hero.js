@@ -159,6 +159,18 @@ function Hero() {
         options={ optionsVar }
       />
       
+      <div className="hero__visual">
+        <Waveline className="hero__waveline" />
+
+        <motion.img
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 1.5 }}
+          src={binaryWorld}
+          className="hero__big-img"
+        />
+      </div>
+
       <div className="hero__headings">
         <motion.h2
           initial={{ scale: 1.5, x:-125, y:+10, color:"306BD9"}}
@@ -177,17 +189,7 @@ function Hero() {
           I'm Fahd
         </motion.h1>
       </div>
-      <div className="hero__visual">
-        <Waveline className="hero__waveline" />
 
-        <motion.img
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 1.5 }}
-          src={binaryWorld}
-          className="hero__big-img"
-        />
-      </div>
       
       
     </div>

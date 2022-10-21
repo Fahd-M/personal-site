@@ -4,14 +4,7 @@
 @use "../../styles/partials/global" as *; 
 @use "../../styles/partials/typography" as *;
 
-// .container {
-//     width:90%;
-//     display:grid;
-//     grid-template-columns: 30% 60%;
-//     gap:20%;
 
-
-// }
 
 .contact {
     &__content {
@@ -44,8 +37,10 @@
             border-color:white;
             background-color: $primary-color-active;
         }
+    }
 
-    
+    &__method {
+        text-transform: uppercase;
     }
 
     &__icon {
@@ -64,18 +59,18 @@
     }
 }
 
-form {
+.form {
     @include flexed(column,center,center);
-    //gap:1rem;
     width:80%;
 
+    &__label {
+        text-transform: uppercase;
+        color:white;
+    }
+
 
 }
 
-.form__label {
-    text-transform: uppercase;
-    color: white;
-}
 input, textarea {
     width:100%;
     padding:1.5rem;
@@ -85,6 +80,7 @@ input, textarea {
     resize:none;
     color:white;
     margin-bottom:1rem;
+    font-family: inherit;
     &:hover{
         background-color: $container-color;
     }
