@@ -7,25 +7,24 @@
 
 // ANOTHER STYLE ANIMATION METHOD IS TO START WITH THE ELEMENT POSITION x=-100 THEN MOVING TO x=0 
 .content {
-border:1px solid grey;
-position: relative;
-&__title {
-    // font-size:$h1-font-size;
-    font-weight:$font-weight-bold;
-    text-transform: uppercase;
-    
-    @include tablet {
-        font-size: $h1-tablet-font-size;
-    }
-}
-
-
-&__intro {
-    @include flexed(column,center,center);
-    gap:1.5rem;
-}
-&__container{
+    position: relative;
+    &__title {
+        // font-size:$h1-font-size;
+        font-weight:$font-weight-bold;
+        text-transform: uppercase;
         
+        @include tablet {
+            font-size: $h1-tablet-font-size;
+        }
+    }
+
+
+    &__intro {
+        @include flexed(column,center,center);
+        gap:1.5rem;
+    }
+    
+    &__container{    
         position: relative;
         overflow: hidden;
         width:100%;
@@ -65,6 +64,7 @@ position: relative;
     @include flexed(column,center,center);
     width:100%;
     position:relative;
+    
 
     // background-color: hsla(219,33%, 32%, .5);
     // filter:blur(112px);

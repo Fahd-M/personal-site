@@ -5,7 +5,7 @@
 @use "../../styles/partials/typography" as *;
 
 .header {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.90);
     @include flexed(row, space-between, center);
     height:$header-height;
     z-index:$z-index-fixed;

@@ -21,6 +21,10 @@
     &__options {
         @include flexed(column,center,center);
         gap:2rem;
+        @include tablet {
+            @include flexed(row,center,center);
+            
+        }
     }
     &__option {
         @include flexed(column,center,center);

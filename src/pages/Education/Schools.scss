@@ -11,7 +11,8 @@
         position:relative;
         margin-bottom:2rem;
         padding:2rem;
-        left:0.5rem;
+        //left:0.5rem;
+        align-self:center;
         
         &:hover{
             cursor: pointer;
@@ -103,5 +104,8 @@
     }
     &__details {
         font-size:$small-font-size;
+        @include tablet {
+            margin-top:1rem;
+        }
     }
 }

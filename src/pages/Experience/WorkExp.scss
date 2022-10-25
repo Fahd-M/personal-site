@@ -21,6 +21,9 @@
         display:inline-flex;
         align-items: flex-end;
         width:22%;
+        @include tablet {
+            width:10%;
+        }
     }
     &__img {
         width:100%;
@@ -34,12 +37,21 @@
     &__title {
         color: $primary-color;
         font-size:$h3-font-size;
+        @include tablet {
+            font-size:$h2-font-size;
+        }
     }
     &__role {
         font-size:$small-font-size;
+        @include tablet {
+            font-size:$h3-font-size;
+        }
     }
     &__date {
         font-size: $small-font-size;
+        @include tablet {
+            font-size: $h3-font-size;
+        }
     }
 
     &__description{
