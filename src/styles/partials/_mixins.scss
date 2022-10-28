@@ -15,6 +15,12 @@
       @content;
     }
   }
+
+@mixin wide-screen {
+  @media screen and (min-width: $wider-screen-breakpoint) {
+    @content;
+  }
+}
   
 @mixin flexed($direction, $justify, $align) {
     display: flex;

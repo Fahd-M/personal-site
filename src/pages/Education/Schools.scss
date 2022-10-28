@@ -73,11 +73,18 @@
         @include flexed(column, flex-start,flex-start);
         margin-right:1rem;
         width:100%;
+        @include desktop {
+            width:60%;
+            align-items:center;
+        }
     }
 
     &__visual {
         @include flexed(row, center,center);
         width:100%;
+        @include desktop {
+            width:40%;
+        }
     }
     &__img {
         width:10rem;
@@ -86,6 +93,9 @@
     &__name {
         margin:0;
         font-size: $h3-font-size;
+        @include desktop {
+            font-size:$h2-font-size;
+        }
         &:hover {
             color: $primary-color;
         }
@@ -95,17 +105,26 @@
         margin:0;
         font-size: $h3-font-size;
         font-weight: $font-weight-light;
+        @include desktop {
+            font-size:$h2-font-size;
+        }
     }
 
     &__date {
         margin:0;
         font-weight: $font-weight-light;
         font-size:$h3-font-size;
+        @include desktop {
+            font-size: $h2-font-size;
+        }
     }
     &__details {
         font-size:$small-font-size;
         @include tablet {
             margin-top:1rem;
+        }
+        @include desktop {
+            font-size:$normal-font-size;
         }
     }
 }

@@ -2,7 +2,7 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/global" as *; 
-
+@use "../../styles/partials/typography" as *;
 .about {
     &__body { 
         @include flexed(column,center, center);
@@ -15,12 +15,22 @@
     &__content {
         @include flexed(row,center,flex-start);
         gap:1rem;
+
     }
+
+    // &__title {
+    //     @include desktop {
+    //         font-size:$h1-tablet-font-size;
+    //     }
+    // }
 
     &__text {
         @include flexed(column,center,center);
         gap:1rem;
         margin-left:0.5rem;
+        @include desktop {
+            margin:0 auto;
+        }
     }
 
     &__img {
@@ -43,6 +53,15 @@
             transform:none
         }
     }
+
+    &__info {
+        @include tablet {
+            font-size:$h3-font-size;
+        }
+        @include desktop {
+            font-size:$h2-font-size;
+        }
+    }
 }
 
 .interact {
@@ -54,7 +73,11 @@
         padding: 2%;
         border-radius:15%;
         align-self: center;
-    
+        text-transform: uppercase;
+        @include desktop {
+            font-size:$h3-font-size;
+
+        }
     
         @include link-reset;
         &:hover {
@@ -71,6 +94,11 @@
 
     &__title{ 
     margin: 1.5rem 0rem;
+    @include desktop {
+            font-size: $h1-font-size;
+            margin:3rem 0rem;
+        }
+    
     }
 
 }

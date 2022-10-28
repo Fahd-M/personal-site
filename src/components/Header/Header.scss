@@ -64,10 +64,17 @@
             width:70%;
             font-size:$h3-font-size;
             @include flexed(row,space-around,center);
+            @include tablet {
+                font-size:$h2-font-size;
+            }
+            @include desktop {
+                font-size:$h1-font-size;
+            }
         }
     }
 
     &__item {
+        text-transform: uppercase;
         @include tablet {
             &:hover{
                 color:$primary-color;

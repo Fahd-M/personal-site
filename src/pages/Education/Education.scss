@@ -7,16 +7,22 @@
 
 .education {
     width:100%;
-    max-width: 1140px;
+    //max-width: 1140px;
     @include flexed(column,flex-start,center);
-
+    @include desktop {
+        margin: 0 auto;
+    }
     &__wrapper {
         width:100%;
         @include flexed(row,center,flex-start);
     }
 
     &__title {
-        font-size:$h1-font-size;  
+        font-size:$h1-font-size;
+        @include desktop {
+            font-size:$h1-tablet-font-size;
+        }
+          
     }
 
     &__info {
@@ -27,8 +33,11 @@
 
     &__school {
         font-size: $h2-font-size;
-        text-decoration: underline;
         align-self: center; 
         margin:1rem;
+        @include desktop {
+            font-size:$h1-font-size;
+        }
+        
     }
 }

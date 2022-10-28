@@ -11,7 +11,7 @@ function Interests() {
   return (
     <>
       <div className="cards interest-list">
-      <motion.div whileHover={{ scale: 1.1 }} className="card interest-card">
+        <motion.div whileHover={{ scale: 1.1 }} className="card interest-card">
           <img className="card__img" src={raptors} alt="fahd raptors"/>
           <div className="card-body">
             <h4 className="card-title">Basketball</h4>

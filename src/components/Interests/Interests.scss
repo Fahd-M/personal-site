@@ -25,6 +25,10 @@
         gap:1.5rem;
         width:90vw;
     }
+    @include desktop {
+        //width:100vw;
+        margin:2% auto;
+    }
 }
 
 .interest-card {
@@ -37,6 +41,11 @@
         height:100%;
         align-self:flex-start;
         @include flexed(column, space-around, center);
+    }
+    @include desktop { 
+        width:80% !important;
+        justify-self:center;
+
     }
 }
 
@@ -59,6 +68,7 @@
 
 .card-title {
     padding:1rem;
+    text-transform: uppercase;
     @include tablet {
         font-size:$h3-font-size;
     }

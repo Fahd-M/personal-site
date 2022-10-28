@@ -156,6 +156,14 @@
 
 .screen-view {
     margin-bottom:2.75rem;
+    width:87%;
+    overflow: hidden;
+    @include tablet {
+        width:89%;
+    }
+    @include desktop {
+        width:86%;
+    }
 }
 
 .diag-view {

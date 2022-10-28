@@ -70,10 +70,10 @@ img {
 
 // Reusable classes
 
-.container {
-    max-width:$desktop-breakpoint;
-    //margin: 0 1.5rem;
-}
+// .container {
+//     //max-width:$desktop-breakpoint;
+//     //margin: 0 1.5rem;
+// }
 
 .grid {
     display:grid;
@@ -87,6 +87,9 @@ img {
 .section__title {
     font-size:$h2-font-size;
     text-align:center;
+    @include desktop {
+        font-size:$h1-tablet-font-size;;
+    }
     //margin-bottom:2.5rem;
 }
 

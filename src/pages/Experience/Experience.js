@@ -10,19 +10,21 @@ function Experience() {
       <section className="container">
         <div className="inner">
           <h1 className="title"> My Experience</h1>
-          <div className="download">
+          <a href={resume} download className="download">
             <AiOutlineCloudDownload
               color="#4B80E2"
-              size={30}
+              //size={30}
+              className="download__icon"
             />
-            <a href={resume} download className="download__btn btn">
+            <div className="download__btn btn">
               Download Resume
-            </a>
+            </div>
             <AiOutlineCloudDownload
               color="#4B80E2"
-              size={30}
+              //size={30}
+              className="download__icon"
             />
-          </div>
+          </a>
           <div className="employment">
             <h3 className="employment__title">Employment</h3>
             {messages.employment.map((exp, i) => 

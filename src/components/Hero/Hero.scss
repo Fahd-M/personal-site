@@ -36,9 +36,11 @@
         right: 10%; 
     }
 
-    &__waveline {
-        position:absolute;
-    }
+    // &__waveline {
+    //     position:absolute;
+    //     bottom:10rem;
+
+    // }
 
     &__visual{
         width:100%;
@@ -46,6 +48,12 @@
         bottom:70%;
         //z-index: 30;
         @include flexed(column,center,flex-end);
+        @include desktop {
+            bottom:75%;
+        }
+        @include wide-screen {
+            bottom:80%;
+        }
     }
 
     &__big-img{
@@ -55,7 +63,15 @@
         margin-right:5%;
         margin-bottom:10%;
         //right: 10%;
-        //bottom:20%;
+        @include tablet {
+            bottom:3rem;
+        }
+        @include desktop {
+            bottom:5rem;
+        }
+        @include wide-screen {
+            bottom:9rem;
+        }
     }
 }
 
