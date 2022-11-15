@@ -75,8 +75,8 @@ function Skills() {
                   className="skills__icon"
                 />
                 <article className="skills__text">
-                  <h5 className="skills__name"> Bootstrap </h5>
-                  <small className="skills__level"> Intermediate </small>
+                  <h5 className="skills__name"> TypeScript  </h5>
+                  <small className="skills__level"> Basic </small>
                 </article>
               </article>
             </div>

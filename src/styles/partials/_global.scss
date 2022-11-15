@@ -5,10 +5,6 @@
 @use './typography' as *; 
 
 
-// :root {
-
-// }
-
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -30,6 +26,8 @@ body {
     overflow-x: hidden;
     background-color: $body-color;
     color:$text-color;
+    cursor:default;
+
 }
   
 h1,
@@ -70,11 +68,6 @@ img {
 
 // Reusable classes
 
-// .container {
-//     //max-width:$desktop-breakpoint;
-//     //margin: 0 1.5rem;
-// }
-
 .grid {
     display:grid;
     gap:1.5rem;
@@ -90,7 +83,6 @@ img {
     @include desktop {
         font-size:$h1-tablet-font-size;;
     }
-    //margin-bottom:2.5rem;
 }
 
 .main {

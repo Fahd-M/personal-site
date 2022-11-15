@@ -1,9 +1,15 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .tsparticles {
-    height:75vh;
+    height:80vh;
+    z-index: 10000;
+    @include extended-desktop {
+        height:90vh;
+    }
 }
 
 .hero {
@@ -11,42 +17,80 @@
     opacity:0.75;
     position:relative;
     text-align:center;
-    height:75vh;
+    height:80vh;
+    @include extended-desktop {
+        height:90vh;  
+    }
  
     &__headings {
         @include flexed(column, center, flex-end);
         position: absolute;
-        right:2%;
-        bottom:5%;
+        gap:1rem;
+        right:10%;
+        bottom:15%;
+        width:75vw;
         padding: 1.5rem 1rem;
+        @include tablet {
+            @include flexed(column, center, center);
+            bottom:10%;
+            animation: hello 4s linear 0s normal forwards;
+        }
+
+        @include desktop {
+            left:5%;
+            bottom:30%;
+        }
     }
 
     &__sub-title{
         margin:0;
         position:relative;
         color:$white-color;
-        width:100%;
-        margin-right:10%;
+        width:45vw;
+        font-size: $h2-font-size;
+        @include tablet {
+            right:15%;
+            bottom:2.5rem;
+            
+        }
+        @include desktop {
+            font-size:2.5rem;
+        }
     }
 
     &__title{
         position:relative;
         color:$primary-color-active;
-        width: 27vw;
-        right: 10%; 
+        width: 45vw;
+        right: 5%; 
+        
+        @include tablet {
+            left:20%;
+            top:5rem;
+        }
+        @include mid-screen {
+            top:3rem;
+            padding-left:19%;
+        }
+        @include desktop {
+            width:50%;
+            left:33%;
+            top:10rem;
+            font-size:2.5rem;
+        }
+
     }
 
-    // &__waveline {
-    //     position:absolute;
-    //     bottom:10rem;
+    &__waveline {
+        z-index: -100;
 
-    // }
+
+    }
 
     &__visual{
         width:100%;
         position:relative;
         bottom:70%;
-        //z-index: 30;
         @include flexed(column,center,flex-end);
         @include desktop {
             bottom:75%;
@@ -60,14 +104,17 @@
         width: 9rem;
         position: absolute;
         align-self:flex-end;
-        margin-right:5%;
-        margin-bottom:10%;
-        //right: 10%;
+        right:5%;
+        bottom:10%;
         @include tablet {
             bottom:3rem;
         }
+        @include mid-screen {
+            bottom:9rem;
+        }
         @include desktop {
-            bottom:5rem;
+            padding-bottom:5%;
+            
         }
         @include wide-screen {
             bottom:9rem;
@@ -75,3 +122,7 @@
     }
 }
 
+@keyframes hello {
+    from {scale:0; bottom:0px;}
+    to { scale:1.0; bottom:250px;}
+}

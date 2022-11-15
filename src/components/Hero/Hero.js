@@ -145,7 +145,7 @@ function Hero() {
         "position": "50% 50%",
         "repeat": "no-repeat",
         "size": "cover",
-       "opacity":0.9
+       "opacity":0.5
     }
   };
 
@@ -173,17 +173,17 @@ function Hero() {
 
       <div className="hero__headings">
         <motion.h2
-          initial={{ scale: 1.5, x:-125, y:+10, color:"306BD9"}}
-          animate={{ scale:1, x:0, y:0, color:"306BD9"}}
-          transition={{delay: 5, duration: 2}}
+          initial={{ scale: 1}}
+          animate={{ scale:1.25}}
+          transition={{delay: 4, duration: 2}}
           className="hero__sub-title"
         >
           Hello World!
         </motion.h2>
         <motion.h1
-          initial={{ scale: 1, y:0 }}
-          animate={{ scale: 1.5, y:+20 }}
-          transition={{ duration: 3 }}
+          initial={{ scale:1, y:0 }}
+          animate={{ scale:1.25, y:+20 }}
+          transition={{ delay:4, duration: 2 }}
           className="hero__title"
         >
           I'm Fahd

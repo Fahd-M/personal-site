@@ -7,7 +7,6 @@ import carRear from "../../assets/images/evo-back-diagonal.png";
 import carCorner from "../../assets/images/evo-front-diagonal.png";
 
 import { Link } from "react-router-dom";
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import "swiper/css/pagination";
@@ -27,7 +26,6 @@ function Content() {
             <div className="car-nav__start">
               <Link to="/about" className="car-nav__button">Start</Link>
             </div>
-            {/* SET UP onClick so that after clicking start it makes the slider div appear? */}
           </div>
 
           <Swiper
@@ -36,7 +34,6 @@ function Content() {
             slidesPerView={1}
             loop={true}
             grabCursor={true}
-            //navigation={true}
             onSlideChange={()=> console.log('slide changed')}
             pagination={{
               dynamicBullets: true,
