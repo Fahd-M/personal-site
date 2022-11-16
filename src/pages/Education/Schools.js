@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Schools.scss';
+
 export const Schools = (props) => {
     const [isOpen, toggleOpen] = useState(false)
     return (

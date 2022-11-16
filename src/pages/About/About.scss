@@ -3,6 +3,7 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/global" as *; 
 @use "../../styles/partials/typography" as *;
+
 .about {
     &__body { 
         @include flexed(column,center, center);
@@ -15,14 +16,7 @@
     &__content {
         @include flexed(row,center,flex-start);
         gap:1rem;
-
     }
-
-    // &__title {
-    //     @include desktop {
-    //         font-size:$h1-tablet-font-size;
-    //     }
-    // }
 
     &__text {
         @include flexed(column,center,center);
@@ -76,7 +70,6 @@
         text-transform: uppercase;
         @include desktop {
             font-size:$h3-font-size;
-
         }
     
         @include link-reset;
@@ -98,7 +91,5 @@
             font-size: $h1-font-size;
             margin:3rem 0rem;
         }
-    
     }
-
 }

@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
 import './Education.scss';
-import { SlideDown } from 'react-slidedown';
-import 'react-slidedown/lib/slidedown.css';
 import eduMessages from './eduMessages';
 import { Schools } from './Schools';
 

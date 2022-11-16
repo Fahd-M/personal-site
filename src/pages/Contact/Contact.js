@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './Contact.scss';
 import { MdOutlineMail } from 'react-icons/md';
 import { SiWhatsapp } from 'react-icons/si';
@@ -7,15 +7,18 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
-
+  const [status, setStatus] = useState(undefined);
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_johdowo', 'template_7jp0qqa', form.current, 'fK2MIDXw4W9_akY2Z')
       .then((result) => {
           console.log(result.text);
+          setStatus({ type: 'success' })
       }, (error) => {
           console.log(error.text);
+          setStatus({ type: 'error'})
       });
     
       e.target.reset();
@@ -34,7 +37,7 @@ function Contact() {
               <div className='contact__text'>
                 <h4 className='contact__method'>Email</h4>
                 <p className='contact__credential'>fahd.munir.89@gmail.com</p>
-                <a href='mailto:fahd.munir.89@gmail.com' target="_blank" className='contact__link'>Send an email</a>
+                <a href='mailto:fahd.munir.89@gmail.com' target="_blank"  className='contact__link'>Send an email</a>
               </div>
             </article>
             <article className='contact__option'>
@@ -47,6 +50,7 @@ function Contact() {
             </article>
 
           </div>
+          <h3 className='contact__sub-title'>You can also submit the form below to email me!</h3>
           <form ref={form} onSubmit={sendEmail} className="form">
             <label className="form__label" for="name">What is your name?</label>
             <input className="form__placeholder" type="text" name="name" placeholder="Your Full Name" required />
@@ -58,6 +62,11 @@ function Contact() {
             <textarea className="form__placeholder" name="message" rows="7" placeholder="Your Message" required></textarea>
             <button type="submit" className='btn btn-primary'>Send Message</button>
           </form>
+        </div>
+
+        <div className='alert'>
+        {status?.type === 'success' && <h3 className='alert__success'> Your email has been sent!</h3>}
+        {status?.type === 'error' && <h3 className='alert__error'> Your email has not been sent, please try again! </h3>}
         </div>
       </div>
     </section>

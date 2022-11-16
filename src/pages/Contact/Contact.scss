@@ -19,7 +19,6 @@
         width:90%;
         @include flexed(column,center, center);
         gap:2rem;
-
     }
 
     &__title {
@@ -42,13 +41,12 @@
             @include flexed(row,center,center);
             width:90vw;
         }
-        
     }
 
     &__text {
         @include flexed(column,center,center);
-
     }
+
     &__option {
         @include flexed(column,center,center);
         gap:0.5rem;
@@ -114,6 +112,7 @@
             font-size:3.5rem;
         }
     }
+
     &__link {
         @include link-reset;
         text-decoration:underline;
@@ -125,7 +124,6 @@
         @include tablet { 
             font-size:$normal-font-size;
         }
-        
     }
 }
 
@@ -146,7 +144,6 @@
             font-size:$h3-font-size;
         }
     }
-
 }
 
 input, textarea {

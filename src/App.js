@@ -23,7 +23,8 @@ function App() {
         <Route path="/experience" component={Experience}/>
         <Route path="/education" component={Education}/>
         <Route path="/contact" component={Contact}/>
-        <Route component={NotFound} />
+        <Route path="/404" component={NotFound} />
+        <Route path="*" component={NotFound} />
       </Switch>
       <Footer />
 

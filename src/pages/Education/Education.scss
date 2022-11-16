@@ -7,11 +7,11 @@
 
 .education {
     width:100%;
-    //max-width: 1140px;
     @include flexed(column,flex-start,center);
     @include desktop {
         margin: 0 auto;
     }
+    
     &__wrapper {
         width:100%;
         @include flexed(row,center,flex-start);
@@ -28,7 +28,6 @@
     &__info {
         @include flexed(column,flex-start, flex-start);
         width:100%;
-        // tablet: column, flex-start , desktop:row, space-evenly(justify-content)
     }
 
     &__school {
@@ -38,6 +37,5 @@
         @include desktop {
             font-size:$h1-font-size;
         }
-        
     }
 }

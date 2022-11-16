@@ -4,6 +4,7 @@ import './Experience.scss';
 import {AiOutlineCloudDownload} from 'react-icons/ai'
 import messages from "./Messages";
 import { WorkExp } from "./WorkExp";
+
 function Experience() {
   return (
     <>
@@ -13,7 +14,6 @@ function Experience() {
           <a href={resume} download className="download">
             <AiOutlineCloudDownload
               color="#4B80E2"
-              //size={30}
               className="download__icon"
             />
             <div className="download__btn btn">
@@ -21,7 +21,6 @@ function Experience() {
             </div>
             <AiOutlineCloudDownload
               color="#4B80E2"
-              //size={30}
               className="download__icon"
             />
           </a>
