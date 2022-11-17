@@ -37,7 +37,7 @@ function Contact() {
               <div className='contact__text'>
                 <h4 className='contact__method'>Email</h4>
                 <p className='contact__credential'>fahd.munir.89@gmail.com</p>
-                <a href='mailto:fahd.munir.89@gmail.com' target="_blank"  className='contact__link'>Send an email</a>
+                <a href='mailto:fahd.munir.89@gmail.com' target="_blank" rel="noreferrer"  className='contact__link'>Send an email</a>
               </div>
             </article>
             <article className='contact__option'>
@@ -45,7 +45,7 @@ function Contact() {
               <div className='contact__text'>
                 <h4 className='contact__method'>WhatsApp</h4>
                 <p className='contact__credential'>+14165618142</p>
-                <a href='https://api.whatsapp.com/send?phone=14165618142' target="_blank" className='contact__link'>Send a message</a>
+                <a href='https://api.whatsapp.com/send?phone=14165618142' target="_blank" rel="noreferrer" className='contact__link'>Send a message</a>
               </div>
             </article>
 

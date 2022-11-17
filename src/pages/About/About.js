@@ -16,6 +16,7 @@ function About() {
           initial={{y:1300}}
           animate={{y: [1300,1200,1000,800,600,400, 200, 0, 200, 400, 600, 800, 1000, 1200,1300]}}
           src={fahdSelfieOutdoor} 
+          alt="Fahd selfie outdoors"
           className='about__outdoor'
         />
         <div className='about__text'>
@@ -41,8 +42,8 @@ function About() {
           transition={ {repeat:Infinity, duration: 30}}
           initial={{y:0}}
           animate={{y: [0,200, 400, 600, 800, 1000, 1200, 1300, 1200, 1000, 800, 600,400, 200, 0]}}
-     
           src={fahdSelfie} 
+          alt="Fahd selfie indoors"
           className='about__img'
         />
  

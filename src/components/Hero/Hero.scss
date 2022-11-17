@@ -57,7 +57,7 @@
             bottom:2.5rem;   
         }
         @include mid-screen {
-            bottom:-5rem;
+            bottom:5rem;
         }
         @include desktop {
             font-size:2.5rem;
@@ -75,7 +75,7 @@
             top:5rem;
         }
         @include mid-screen {
-            top:5rem;
+            top:2rem;
             padding-left:19%;
         }
         @include desktop {
@@ -84,13 +84,10 @@
             top:10rem;
             font-size:2.5rem;
         }
-
     }
 
     &__waveline {
         z-index: -100;
-
-
     }
 
     &__visual{
@@ -99,9 +96,6 @@
         bottom:70%;
         @include flexed(column,center,flex-end);
         @include mid-screen {
-            bottom:95%;
-        }
-        @include desktop {
             bottom:75%;
         }
         @include wide-screen {

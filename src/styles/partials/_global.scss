@@ -27,7 +27,6 @@ body {
     background-color: $body-color;
     color:$text-color;
     cursor:default;
-
 }
   
 h1,
@@ -67,11 +66,6 @@ img {
 
 
 // Reusable classes
-
-.grid {
-    display:grid;
-    gap:1.5rem;
-}
 
 .section {
     padding:2rem 0 2rem;

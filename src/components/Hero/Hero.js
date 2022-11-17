@@ -168,6 +168,7 @@ function Hero() {
           transition={{ delay: 1.5 }}
           src={binaryWorld}
           className="hero__big-img"
+          alt="Binary world globe"
         />
       </div>
 

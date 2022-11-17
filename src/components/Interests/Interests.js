@@ -12,7 +12,7 @@ function Interests() {
     <>
       <div className="cards interest-list">
         <motion.div whileHover={{ scale: 1.1 }} className="card interest-card">
-          <img className="card__img" src={raptors} alt="fahd raptors"/>
+          <img className="card__img" src={raptors} alt="toronto raptors logo"/>
           <div className="card-body">
             <h4 className="card-title">Basketball</h4>
           </div>
@@ -24,13 +24,13 @@ function Interests() {
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} className="card interest-card">
-          <img className="card__img" src={horhey} alt="horhey mia"/>
+          <img className="card__img" src={horhey} alt="horhey and mia the dogs"/>
           <div className="card-body">
             <h4 className="card-title">Dogs</h4>
           </div>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} className="card interest-card">
-          <img className="card__img" src={initial} alt="fahd anime"/>
+          <img className="card__img" src={initial} alt="initial-D anime logo"/>
           <div className="card-body">
             <h4 className="card-title">Anime</h4>
           </div>
@@ -53,21 +53,3 @@ function Interests() {
 }
 
 export default Interests
-
-            /* MOVE THIS CODE BELOW INTO ABOUT PAGE(INTERESTS) */
-            /* <h3 className="home__icons">
-              <GiElectric className="home__intro-icon" color="white" />
-              Junior Developer
-            </h3>
-            <h3 className="home__icons">
-              <AiOutlineCar className="home__intro-icon" color="white" />
-              Automotive Enthusiast 
-            </h3>
-            <h3 className="home__icons">
-              <MdOutlineSportsBasketball className="home__intro-icon" color="white" />
-              All things basketball
-            </h3>
-            <h3 className="home__icons">
-              <FaDog className="home__intro-icon" color="white" />
-              Dog Lover
-            </h3> */
