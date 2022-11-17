@@ -15,6 +15,24 @@
       @content;
     }
   }
+
+@mixin extended-desktop {
+  @media screen and (min-width: $wide-screen-breakpoint) {
+    @content;
+  }
+}
+
+@mixin wide-screen {
+  @media screen and (min-width: $wider-screen-breakpoint) {
+    @content;
+  }
+}
+
+@mixin mid-screen {
+  @media screen and (min-width: $mid-screen-breakpoint) {
+    @content;
+  }
+}
   
 @mixin flexed($direction, $justify, $align) {
     display: flex;

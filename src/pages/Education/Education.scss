@@ -1,0 +1,41 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+
+.education {
+    width:100%;
+    @include flexed(column,flex-start,center);
+    @include desktop {
+        margin: 0 auto;
+    }
+    
+    &__wrapper {
+        width:100%;
+        @include flexed(row,center,flex-start);
+    }
+
+    &__title {
+        font-size:$h1-font-size;
+        @include desktop {
+            font-size:$h1-tablet-font-size;
+        }
+          
+    }
+
+    &__info {
+        @include flexed(column,flex-start, flex-start);
+        width:100%;
+    }
+
+    &__school {
+        font-size: $h2-font-size;
+        align-self: center; 
+        margin:1rem;
+        @include desktop {
+            font-size:$h1-font-size;
+        }
+    }
+}

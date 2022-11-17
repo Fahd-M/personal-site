@@ -2,10 +2,10 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .header {
-    background-color: transparent;
-    border:1px solid black;
+    background-color: rgba(0, 0, 0, 0.90);
     @include flexed(row, space-between, center);
     height:$header-height;
     z-index:$z-index-fixed;
@@ -13,42 +13,46 @@
     top:0;
     left:0;
     width:100%;
+
+    @include tablet {
+        @include flexed(row,flex-end, center);
+        height: $tablet-header-height;
+    }
 }   
 
 .nav {
-    border: white dotted 2px;
-    //position:fixed;
     width:100%;
-    margin:0 auto;
+    position: relative;
+    left:5%;
+    
+    //margin:0 auto;
+
 
     &__logo {
-        width: 2rem;
-        height:2rem;
+        width: 2.5rem;
+        height:2.5rem;
         position:relative;
         left:5%;
+        //margin:1.5rem 0rem;
         transition:transform;
         transition-duration:2s;
         display: inline-flex;
         align-items: center;
         column-gap: .25rem;
         cursor: pointer;
+        border-radius:20%;
+        z-index: $z-index-fixed;
         &:hover{
             animation:rotate 2s linear infinite;
         }
- 
-        
-    }
 
-    // &__home {
-    //     transition:transform;
-    //     transition-duration:2s;
-    //     z-index:20;
-    //     &:hover{
-    //         //transform: rotate(360deg);
-    //         //transition: transform 0.3 ease-in-out;
-    //         animation: rotate 2s linear infinite;
-    //     }
-    // }
+        @include tablet {
+            width:4rem;
+            height:auto;
+            margin:0.5rem 0rem;
+
+        }
+    }
 
     &__list {
         display:none; 
@@ -58,20 +62,34 @@
             margin:0;
             padding:0.5rem;
             width:70%;
-            @include flexed(row,space-between,center);
+            font-size:$h3-font-size;
+            @include flexed(row,space-around,center);
+            @include tablet {
+                font-size:$h2-font-size;
+            }
+            @include desktop {
+                font-size:$h1-font-size;
+            }
         }
     }
 
-    // &__item {
-    //     border-bottom:1px solid white;
-    // }
+    &__item {
+        text-transform: uppercase;
+        @include tablet {
+            &:hover{
+                color:$primary-color;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
 
     &__link{
         text-decoration: none;
         color:white;
 
         &:hover{
-            color:red;
+            color:$primary-color;
             font-size:1.5em;
         }
     }

@@ -1,0 +1,129 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+.schools {
+    &__wrapper {
+        border: 3px solid white;
+        width:95%;
+        position:relative;
+        margin-bottom:2rem;
+        padding:2rem;
+        align-self:center;
+        
+        &:hover{
+            cursor: pointer;
+            &::before {
+                content: '';
+                width: 50px;
+                height: 75px;
+                border-top:3px solid $primary-color;
+                border-right:3px solid $primary-color;
+                position:absolute;
+                top:-3px;
+                transition: 0.4s;
+                right: -3px;
+            }
+            &::after {
+                content: '';
+                width: 50px;
+                height: 75px;
+                border-left:3px solid $primary-color;
+                border-bottom:3px solid $primary-color;
+                position:absolute;
+                bottom:-3px;
+                transition: 0.4s;
+                left:-3px;
+            }
+        }
+        &::before {
+            content: '';
+            width:75px;
+            height: 50px;
+            border-top:2px solid white;
+            border-right:2px solid white;
+            position:absolute;
+            top:-3px;
+            transition: 0.4s;
+            right:-3px;
+        }
+        &::after{
+            content: '';
+            width:75px;
+            height: 50px;
+            border-left:2px solid white;
+            border-bottom:2px solid white;
+            position:absolute;
+            bottom:-3px;
+            transition: 0.4s;
+            left:-2px;
+        }
+
+    }
+
+    &__info {
+        @include flexed(row, space-evenly,center);
+        
+    }
+
+    &__text {
+        @include flexed(column, flex-start,flex-start);
+        margin-right:1rem;
+        width:100%;
+        @include desktop {
+            width:60%;
+            align-items:center;
+        }
+    }
+
+    &__visual {
+        @include flexed(row, center,center);
+        width:100%;
+        @include desktop {
+            width:40%;
+        }
+    }
+    &__img {
+        width:10rem;
+    }
+
+    &__name {
+        margin:0;
+        font-size: $h3-font-size;
+        @include desktop {
+            font-size:$h2-font-size;
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &__school {
+        margin:0;
+        font-size: $h3-font-size;
+        font-weight: $font-weight-light;
+        @include desktop {
+            font-size:$h2-font-size;
+        }
+    }
+
+    &__date {
+        margin:0;
+        font-weight: $font-weight-light;
+        font-size:$h3-font-size;
+        @include desktop {
+            font-size: $h2-font-size;
+        }
+    }
+    &__details {
+        font-size:$small-font-size;
+        @include tablet {
+            margin-top:1rem;
+        }
+        @include desktop {
+            font-size:$normal-font-size;
+        }
+    }
+}

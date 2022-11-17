@@ -1,22 +1,15 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
-
-* {
-    font-family:'Roboto Slab';
-    margin:0;
-box-sizing: border-box;
-padding:0;    
-}
-
+@use "../../styles/partials/global" as *; 
 
 
 .content {
     background-color: black;
-    color:white;
+    color:$white-color;
     @include flexed(column, center,flex-start);
     gap:4rem;
     width: 100%;
     scroll-behavior: smooth;
-
+    border:none;
 }

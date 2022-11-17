@@ -1,0 +1,79 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+.inner {
+    @include flexed(column,center,center);
+    gap:1rem;
+}
+
+.download {
+    @include flexed(row,center,center);
+    gap:0.5rem;
+    @include link-reset;
+    cursor: pointer;
+    &__btn {
+        cursor: pointer;
+        border:1px solid $primary-color;
+        padding: 2%;
+        border-radius:5px;
+        text-transform: uppercase;
+        align-self: center;
+        width:100%;
+        text-align: center;
+    
+        &:hover {
+            background-color:$primary-color;
+            border:transparent;
+        }
+    }
+
+    &__icon {
+        font-size:2em;
+        @include tablet {
+            font-size:3.5em;
+        }
+        @include desktop {
+            font-size:4em;
+        }
+    }
+}
+
+.title {
+    margin-top:1rem;
+    @include desktop {
+        margin-top:1.5rem;
+        font-size:$h1-tablet-font-size;
+    }
+}
+
+.skills {
+    &__section-title{
+        text-align: center;
+        margin-top:1rem;
+        @include tablet {
+            font-size:$h2-font-size;
+        }
+        @include desktop {
+            font-size: $h1-font-size;
+        }
+    }
+}
+
+.employment {
+    &__title {
+        text-align: center;
+        margin:1rem 0;
+        font-size:$h2-font-size;
+        font-weight:$font-weight-regular;
+        @include tablet {
+            font-size: $h1-font-size;
+        }
+        @include desktop {
+            font-size:$h1-font-size;
+        }
+    }
+}
+
