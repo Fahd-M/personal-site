@@ -1,0 +1,95 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+.about {
+    &__body { 
+        @include flexed(column,center, center);
+        gap:0.5rem;
+        @include tablet {
+            margin:1rem 5%;
+        }
+    }
+
+    &__content {
+        @include flexed(row,center,flex-start);
+        gap:1rem;
+    }
+
+    &__text {
+        @include flexed(column,center,center);
+        gap:1rem;
+        margin-left:0.5rem;
+        @include desktop {
+            margin:0 auto;
+        }
+    }
+
+    &__img {
+        width:20%;
+        border-radius:50%;
+        margin-right:0.5rem;  
+        @include tablet {
+            display:none;
+            transform: none;
+        }  
+    }
+
+    &__outdoor {
+        border-radius:80%;
+        width:20%;
+        margin-left:0.5rem;
+
+        @include tablet {
+            display:none;
+            transform:none
+        }
+    }
+
+    &__info {
+        @include tablet {
+            font-size:$h3-font-size;
+        }
+        @include desktop {
+            font-size:$h2-font-size;
+        }
+    }
+}
+
+.interact {
+    @include flexed(row,center,center);
+
+    &__cta {
+        cursor: pointer;
+        border:1px solid white;
+        padding: 2%;
+        border-radius:15%;
+        align-self: center;
+        text-transform: uppercase;
+        @include desktop {
+            font-size:$h3-font-size;
+        }
+    
+        @include link-reset;
+        &:hover {
+            background-color:$primary-color;
+        }
+    }
+}
+
+.interests {
+    &__container { 
+        width:100%;
+        @include flexed(column,center,center);
+    }
+
+    &__title{ 
+    margin: 1.5rem 0rem;
+    @include desktop {
+            font-size: $h1-font-size;
+            margin:3rem 0rem;
+        }
+    }
+}

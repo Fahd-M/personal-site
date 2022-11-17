@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", Arial, sans-serif, sans-serif;
+  font-weight: 500;
+  font-size: 0.938rem;
+  position: relative;
+  overflow-x: hidden;
+  background-color: hsl(219deg, 4%, 4%);
+  color: hsl(219deg, 8%, 75%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Slab", Arial, sans-serif;
+  font-weight: 700;
+  color: hsl(219deg, 8%, 95%);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 2rem 0 2rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.schools__wrapper {
+  border: 3px solid white;
+  width: 95%;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  left: 0.5rem;
+}
+.schools__wrapper:hover {
+  cursor: pointer;
+}
+.schools__wrapper:hover::before {
+  content: "";
+  width: 50px;
+  height: 75px;
+  border-top: 3px solid hsl(219deg, 69%, 56%);
+  border-right: 3px solid hsl(219deg, 69%, 56%);
+  position: absolute;
+  top: -3px;
+  transition: 0.4s;
+  right: -3px;
+}
+.schools__wrapper:hover::after {
+  content: "";
+  width: 50px;
+  height: 75px;
+  border-left: 3px solid hsl(219deg, 69%, 56%);
+  border-bottom: 3px solid hsl(219deg, 69%, 56%);
+  position: absolute;
+  bottom: -3px;
+  transition: 0.4s;
+  left: -3px;
+}
+.schools__wrapper::before {
+  content: "";
+  width: 75px;
+  height: 50px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  position: absolute;
+  top: -3px;
+  transition: 0.4s;
+  right: -3px;
+}
+.schools__wrapper::after {
+  content: "";
+  width: 75px;
+  height: 50px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  bottom: -3px;
+  transition: 0.4s;
+  left: -2px;
+}
+.schools__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.schools__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 1rem;
+}
+.schools__visual {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+}
+.schools__img {
+  height: 90px;
+  width: 90px;
+}
+.schools__name {
+  margin: 0;
+  font-size: 1rem;
+}
+.schools__name:hover {
+  color: hsl(219deg, 69%, 56%);
+}
+.schools__school {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.schools__date {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.schools__details {
+  font-size: 0.813rem;
+}/*# sourceMappingURL=Schools.css.map */

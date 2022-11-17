@@ -1,0 +1,23 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+
+.not-found {
+    @include flexed(column,center,center);
+    gap:1rem;
+    padding:5rem 0rem;
+    &__wrapper {
+        @include desktop {
+            margin:0 auto;
+        }
+    }
+
+    &__img {
+        width:50vw;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}

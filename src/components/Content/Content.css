@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../assets/fonts/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.content {
+  border: 1px solid grey;
+  position: relative;
+}
+.content__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.content__container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.card {
+  background-color: hsl(219deg, 4%, 7%);
+  width: 40%;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(64px);
+          backdrop-filter: blur(64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-nav__image,
+.content__title,
+.home__subtitle {
+  position: relative;
+}
+
+.car-nav {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.car-nav__image {
+  width: 100%;
+  transition: 0.3s;
+  position: relative;
+  bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+.car-nav__image:hover {
+  transform: translateY(-0.25rem);
+}
+.car-nav__link {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  size: 1rem;
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: grid;
+  justify-content: center;
+}
+.car-nav__link:hover {
+  background: hsl(219deg, 69%, 56%);
+}
+.car-nav__start {
+  border: 2px solid hsl(158deg, 89%, 30%);
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.car-nav__start:before {
+  content: "";
+  border: 2px solid hsl(158deg, 98%, 43%);
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 12px hsl(158deg, 98%, 43%);
+  transition: 0.3s;
+  -webkit-animation: button 3s infinite;
+          animation: button 3s infinite;
+}
+@-webkit-keyframes button {
+  0% {
+    box-shadow: 0 0 12px hsl(158deg, 98%, 43%);
+  }
+  50% {
+    box-shadow: 0 0 24px hsl(158deg, 98%, 43%);
+  }
+}
+@keyframes button {
+  0% {
+    box-shadow: 0 0 12px hsl(158deg, 98%, 43%);
+  }
+  50% {
+    box-shadow: 0 0 24px hsl(158deg, 98%, 43%);
+  }
+}
+.car-nav__button {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.screen-view {
+  margin-bottom: 2.75rem;
+}
+
+.diag-view {
+  left: 1.5rem;
+}
+
+.rear-view {
+  left: 1.75rem;
+}
+
+.home__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.home__intro-img {
+  width: 100%;
+}
+.home__links {
+  position: relative;
+}
+.home__link {
+  color: grey;
+  position: absolute;
+  left: 12rem;
+  bottom: 8.5rem;
+  z-index: 100;
+  size: 1rem;
+}
+.home__link-about {
+  bottom: 7rem;
+}
+.home__link-edu {
+  left: 17rem;
+}
+.home__link-exp {
+  left: 17rem;
+  bottom: 7rem;
+}
+.home__link-contact {
+  bottom: 6rem;
+  left: 13rem;
+}
+
+.mySwiper {
+  width: 80%;
+}
+
+.swiper-slide {
+  width: 50%;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(219deg, 8%, 75%) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: hsl(219deg, 69%, 56%) !important;
+}
+
+.swiper-pagination-bullets-dynamic {
+  top: 85%;
+}/*# sourceMappingURL=Content.css.map */

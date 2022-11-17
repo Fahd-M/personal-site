@@ -1,106 +1,131 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 .tsparticles {
-    height:75vh;
-    // z-index: 10;
-    // background-color: black !important;
+    height:80vh;
+    z-index: 10000;
+    @include extended-desktop {
+        height:90vh;
+    }
 }
 
 .hero {
-   // background-image:url('../../assets/images/hero-windshield.avif');
-    // background-position: center;
-    // background-repeat:no-repeat;
-    //aspect-ratio: 16/9;
-    // background-color:bisque;
-    //@include flexed(row, space-between,center);
-    //padding-top:2rem;
     width:100%;
-    margin:0;
-    //z-index:-1;
     opacity:0.75;
     position:relative;
     text-align:center;
-    //background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-    color:white;
-    background-color: black;
-    height:27rem;
-    // &__text{
-    //     @include flexed(column, flex-start,flex-end);
-    //     position:relative;
-    //     right:10%;
-
-    //     //z-index:8;
-    //     color:red;
-    //     bottom:30%;
-        
-    // }
+    height:80vh;
+    @include mid-screen {
+        top:5rem;
+        margin-bottom:4rem;
+    }
+    @include extended-desktop {
+        height:90vh;  
+    }
+ 
     &__headings {
         @include flexed(column, center, flex-end);
         position: absolute;
-        right:5%;
-        bottom:30%;
-    // border: 1px dashed white;
-    // border-radius: 30%;
-    padding: 1.5rem 1rem;
-    z-index: 2;
+        gap:1rem;
+        right:10%;
+        bottom:15%;
+        width:75vw;
+        padding: 1.5rem 1rem;
+        @include tablet {
+            @include flexed(column, center, center);
+            bottom:10%;
+            animation: hello 4s linear 0s normal forwards;
+        }
+
+        @include desktop {
+            left:5%;
+            bottom:30%;
+        }
     }
 
     &__sub-title{
         margin:0;
         position:relative;
-        
+        color:$white-color;
+        width:45vw;
+        font-size: $h2-font-size;
+        @include tablet {
+            right:15%;
+            bottom:2.5rem;   
+        }
+        @include mid-screen {
+            bottom:5rem;
+        }
+        @include desktop {
+            font-size:2.5rem;
+        }
     }
 
     &__title{
-        margin:0;
         position:relative;
-        //bottom:50%;
-        //left:70%;
-        color:red;
-        width: 27vw;
-        right: 10%;
+        color:$primary-color-active;
+        width: 45vw;
+        right: 5%; 
         
+        @include tablet {
+            left:20%;
+            top:5rem;
+        }
+        @include mid-screen {
+            top:2rem;
+            padding-left:19%;
+        }
+        @include desktop {
+            width:50%;
+            left:33%;
+            top:10rem;
+            font-size:2.5rem;
+        }
     }
 
     &__waveline {
-        position:absolute;
-        z-index: 2;
+        z-index: -100;
     }
 
     &__visual{
-        z-index:2;
         width:100%;
-        // background-image:url('../../assets/images/hero-windshield.avif');
         position:relative;
-        bottom:21rem;
-        @include flexed(row,center,center);
-    }
-
-    // &__img {
-    //     width:100%;
-    //     height:40vh;
-    //     opacity:0.5;
-    //     padding-top:4rem;
-    //     //border-radius:1rem;
-    // }
-
-    &__small-img{
-        width:4rem;
-        position:absolute;
-        left:25%;
-        opacity:0.5;
-        bottom:30%;
-        //border:1px solid red;
+        bottom:70%;
+        @include flexed(column,center,flex-end);
+        @include mid-screen {
+            bottom:75%;
+        }
+        @include wide-screen {
+            bottom:80%;
+        }
     }
 
     &__big-img{
-
         width: 9rem;
         position: absolute;
-        right: 10%;
-        bottom: 15%;
+        align-self:flex-end;
+        right:5%;
+        bottom:10%;
+        @include tablet {
+            bottom:3rem;
+        }
+        @include mid-screen {
+            bottom:9rem;
+        }
+        @include desktop {
+            padding-bottom:5%;
+            
+        }
+        @include wide-screen {
+            bottom:9rem;
+        }
     }
 }
 
+@keyframes hello {
+    from {scale:0; bottom:0px;}
+    to { scale:1.0; bottom:250px;}
+}

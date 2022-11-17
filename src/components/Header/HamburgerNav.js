@@ -1,9 +1,7 @@
-import React from "react";
-// import "./Header.scss";
 import "./HamburgerNav.scss";
 import { CgMenuRound } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -13,7 +11,7 @@ function HamburgerNav() {
   const openIcon = (
     <CgMenuRound
       className="hmbg__icon"
-      size="40px"
+      size="50px"
       color="white"
       onClick={() => setOpen(!open)}
     />
@@ -22,7 +20,7 @@ function HamburgerNav() {
   const closeIcon = (
     <CgCloseO
       className="hmbg__icon hmbg__icon-close"
-      size="40px"
+      size="50px"
       color="white"
       onClick={() => setOpen(!open)}
     />
@@ -31,10 +29,10 @@ function HamburgerNav() {
 
   const closeMenu = () => setOpen(false);
   const isMobile = () => true;
-  const animateFrom = { opacity: 0, x: +10 };
+  const animateFrom = { opacity: 0, x: +100 };
   const animateTo = { opacity: 1, x: 0 };
 
-  const listFrom = {opacity: 0, x: -50, y:-100};
+  const listFrom = {opacity: 0, x: -100, y:-50};
   const listTo = {opacity:1, x:0, y:0}
 
   return (

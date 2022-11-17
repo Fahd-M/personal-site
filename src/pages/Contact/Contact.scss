@@ -1,0 +1,181 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/global" as *; 
+@use "../../styles/partials/typography" as *;
+
+
+
+.contact {
+    &__content {
+        @include flexed(column,center,center);
+        gap:1rem;
+        @include desktop {
+            margin: 0 auto;
+        }
+    }
+
+    &__container {
+        width:90%;
+        @include flexed(column,center, center);
+        gap:2rem;
+    }
+
+    &__title {
+        @include desktop {
+            font-size: $h1-tablet-font-size;
+        }
+    }
+
+    &__sub-title {
+        @include desktop {
+            font-size:$h1-font-size;
+        }
+    }
+
+
+    &__options {
+        @include flexed(column,center,center);
+        gap:2rem;
+        @include tablet {
+            @include flexed(row,center,center);
+            width:90vw;
+        }
+    }
+
+    &__text {
+        @include flexed(column,center,center);
+    }
+
+    &__option {
+        @include flexed(column,center,center);
+        gap:0.5rem;
+        background-color: $primary-color;
+        padding:1.2rem;
+        text-align: center;
+        color:white;
+        border-radius:1.2rem;
+        border:2px solid transparent;
+        @include transition;
+        width:100%;
+        @include tablet {
+            width:fit-content;
+            gap:2rem;
+            animation:move 10s linear infinite;
+            
+            @keyframes move {
+                0% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(8rem);
+                }
+                50% {
+                    transform:translateX(0rem);
+                }
+                75% {
+                    transform: translateX(-8rem);
+                }
+                100% {
+                    transform: translateX(0rem);
+                }
+            }
+            @include flexed(row,space-around,center);
+        }
+        &:hover{
+            border-color:white;
+            background-color: $primary-color-active;
+        }
+    }
+
+    &__method {
+        text-transform: uppercase;
+        @include desktop {
+            font-size:$h3-font-size;
+        }
+    }
+
+    &__credential {
+        @include desktop {
+            font-size:$normal-font-size;
+        }
+    }
+
+    &__icon {
+        color:white;
+        font-size:1.5rem;
+        margin-bottom:0.5rem;
+        @include tablet {
+            font-size: 2.5rem;
+        }
+        @include desktop {
+            font-size:3.5rem;
+        }
+    }
+
+    &__link {
+        @include link-reset;
+        text-decoration:underline;
+        padding:0.5rem;
+        margin-top:0.5rem;
+        display:inline-block;
+        font-size:$small-font-size;
+        cursor: pointer;
+        @include tablet { 
+            font-size:$normal-font-size;
+        }
+    }
+}
+
+.form {
+    @include flexed(column,center,center);
+    width:80%;
+
+    &__label {
+        text-transform: uppercase;
+        color:white;
+    }
+
+    &__placeholder {
+        @include tablet {
+            font-size:$normal-font-size;
+        }
+        @include desktop {
+            font-size:$h3-font-size;
+        }
+    }
+}
+
+input, textarea {
+    width:100%;
+    padding:1.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border:2px solid $primary-color;
+    resize:none;
+    color:white;
+    margin-bottom:1rem;
+    font-family: inherit;
+    &:hover{
+        background-color: $container-color;
+    }
+}
+
+.btn { 
+    background-color: $primary-color;
+    border:1px solid transparent;
+    padding:1rem;
+    color:white;
+    border-radius:1rem;
+    cursor: pointer;
+    @include tablet {
+        font-size:$h3-font-size;
+    }
+    @include desktop {
+        font-size:$h2-font-size;
+    }
+    &:hover {
+        background-color:black;
+        border:1px solid $primary-color;
+    }
+}
