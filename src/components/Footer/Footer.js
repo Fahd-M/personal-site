@@ -12,16 +12,10 @@ function Footer() {
       <div className='footer__links'>
         <Link to="/home" className="footer__logo">Return to Home</Link>
         <div className='footer__socials'>
-            <a href='https://facebook.com' target="_blank" rel="noreferrer" className='footer__link'>
-              <AiOutlineFacebook className='footer__icon'/>
-            </a>
-            <a href='https://intagram.com' target="_blank" rel="noreferrer" className='footer__link'>
-              <BsInstagram className='footer__icon'/>
-            </a>
-            <a href='https://linkedin.com' target="_blank" rel="noreferrer"className='footer__link'>
+            <a href='https://www.linkedin.com/in/fahd-munir/' target="_blank" rel="noreferrer"className='footer__link'>
               <AiOutlineLinkedin className='footer__icon'/>
             </a>
-            <a href='https://github.com' target="_blank" rel="noreferrer" className='footer__link'>
+            <a href='https://github.com/Fahd-M' target="_blank" rel="noreferrer" className='footer__link'>
               <AiFillGithub className='footer__icon'/>
             </a>
         </div> 
